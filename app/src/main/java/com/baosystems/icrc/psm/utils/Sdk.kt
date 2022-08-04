@@ -17,8 +17,8 @@ class Sdk {
         fun d2(context: Context): D2 {
             return try {
                 D2Manager.getD2()
-            } catch (e: IllegalStateException) {
-                D2Manager.blockingInstantiateD2(getD2Configuration(context))
+            } catch (e: Exception) {
+                throw IllegalStateException(e)
             }
         }
 

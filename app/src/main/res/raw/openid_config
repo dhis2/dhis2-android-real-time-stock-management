@@ -1,9 +1,9 @@
 {
- "serverUrl": "",
+ "serverUrl": "https://play.dhis2.org/android-current",
  "loginLabel": "Sign in with *** Account",
- "clientId": "",
- "redirectUri": "msauth://replace_by_appID/replace_by_Hash",
- "discoveryUri": "https://login.microsoftonline.com/replace_by_Tenant/v2.0/.well-known/openid-configuration",
+ "clientId": "PREFIX.apps.googleusercontent.com",
+ "redirectUri": "com.googleusercontent.apps.PREFIX:/oauth2redirect",
+ "discoveryUri": "https://accounts.google.com/.well-known/openid-configuration",
  "authorizationUrl": null,
  "tokenUrl": null
  }

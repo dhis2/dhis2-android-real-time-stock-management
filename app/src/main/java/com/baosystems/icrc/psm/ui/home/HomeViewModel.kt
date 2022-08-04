@@ -73,12 +73,12 @@ class HomeViewModel @Inject constructor(
         get() = _recentActivities
 
     init {
-        loadFacilities()
+       /* loadFacilities()
         loadDestinations()
-        loadRecentActivities()
+        loadRecentActivities()*/
     }
 
-    private fun loadDestinations() {
+    fun loadDestinations() {
         _destinations.postValue(OperationState.Loading)
 
         disposable.add(
@@ -94,8 +94,8 @@ class HomeViewModel @Inject constructor(
         )
     }
 
-    private fun loadFacilities() {
-        _facilities.postValue(OperationState.Loading)
+    fun loadFacilities() {
+        _facilities.value = OperationState.Loading
 
         disposable.add(
             metadataManager.facilities(config.program)
@@ -114,7 +114,7 @@ class HomeViewModel @Inject constructor(
         )
     }
 
-    private fun loadRecentActivities() {
+    fun loadRecentActivities() {
         _recentActivities.postValue(OperationState.Loading)
 
         disposable.add(
@@ -195,5 +195,17 @@ class HomeViewModel @Inject constructor(
             .atZone(ZoneId.systemDefault()
             )
             .toLocalDateTime()
+    }
+
+    fun readyManageStock(): Boolean {
+        if (transactionType.value == null) return false
+
+        if (isDistribution.value == true) {
+            return !(_destination.value == null
+                    || _facility.value == null
+                    || transactionDate.value == null)
+        }
+
+        return _facility.value != null && transactionDate.value != null
     }
 }
