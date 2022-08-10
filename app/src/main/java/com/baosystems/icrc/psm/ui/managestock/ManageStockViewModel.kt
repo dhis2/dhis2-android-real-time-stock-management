@@ -8,11 +8,16 @@ import androidx.paging.PagedList
 import com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_TRANSACTION
 import com.baosystems.icrc.psm.commons.Constants.QUANTITY_ENTRY_DEBOUNCE
 import com.baosystems.icrc.psm.commons.Constants.SEARCH_QUERY_DEBOUNCE
-import com.baosystems.icrc.psm.data.*
+import com.baosystems.icrc.psm.data.AppConfig
+import com.baosystems.icrc.psm.data.OperationState
+import com.baosystems.icrc.psm.data.ReviewStockData
+import com.baosystems.icrc.psm.data.RowAction
+import com.baosystems.icrc.psm.data.TransactionType
 import com.baosystems.icrc.psm.data.models.SearchParametersModel
 import com.baosystems.icrc.psm.data.models.StockEntry
 import com.baosystems.icrc.psm.data.models.StockItem
 import com.baosystems.icrc.psm.data.models.Transaction
+import com.baosystems.icrc.psm.exceptions.InitializationException
 import com.baosystems.icrc.psm.services.SpeechRecognitionManager
 import com.baosystems.icrc.psm.services.StockManager
 import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
@@ -25,7 +30,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
-import java.util.*
+import java.util.Collections
+import java.util.Date
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
@@ -39,9 +45,13 @@ class ManageStockViewModel @Inject constructor(
     private val stockManager: StockManager,
     private val ruleValidationHelper: RuleValidationHelper,
     speechRecognitionManager: SpeechRecognitionManager
-): SpeechRecognitionAwareViewModel(preferenceProvider, schedulerProvider, speechRecognitionManager) {
-    // TODO: Handle cases where transaction is null. (remove transaction!!)
-    val transaction = savedState.get<Transaction>(INTENT_EXTRA_TRANSACTION)
+) : SpeechRecognitionAwareViewModel(
+    preferenceProvider,
+    schedulerProvider,
+    speechRecognitionManager
+) {
+    val transaction: Transaction = savedState.get<Transaction>(INTENT_EXTRA_TRANSACTION)
+        ?: throw InitializationException("Transaction information is missing")
 
     private val _itemsAvailableCount = MutableLiveData<Int>(0)
     private var search = MutableLiveData<SearchParametersModel>()
@@ -50,7 +60,7 @@ class ManageStockViewModel @Inject constructor(
     private val stockItems = Transformations.switchMap(search) { q ->
         _networkState.value = OperationState.Loading
 
-        val result = stockManager.search(q, transaction!!.facility.uid)
+        val result = stockManager.search(q, transaction.facility.uid)
         _itemsAvailableCount.value = result.totalCount
 
         _networkState.postValue(OperationState.Completed)
@@ -63,27 +73,28 @@ class ManageStockViewModel @Inject constructor(
         get() = _networkState
 
     init {
-        if (transaction?.transactionType != TransactionType.DISTRIBUTION &&
-            transaction?.distributedTo != null)
+        if (transaction.transactionType != TransactionType.DISTRIBUTION &&
+            transaction.distributedTo != null
+        )
             throw UnsupportedOperationException(
-                "Cannot set 'distributedTo' for non-distribution transactions")
+                "Cannot set 'distributedTo' for non-distribution transactions"
+            )
 
-        if (transaction?.transactionType == TransactionType.DISTRIBUTION &&
-            transaction.distributedTo == null)
+        if (transaction.transactionType == TransactionType.DISTRIBUTION &&
+            transaction.distributedTo == null
+        )
             throw UnsupportedOperationException("'distributedTo' is mandatory for model creation")
 
         speechRecognitionManager.supportNegativeNumberInput(
-            transaction?.transactionType == TransactionType.CORRECTION
+            transaction.transactionType == TransactionType.CORRECTION
         )
 
         configureRelays()
-        try {
-            loadStockItems()
-        } catch (e: Exception) {}
+        loadStockItems()
     }
 
     private fun loadStockItems() {
-        search.value = SearchParametersModel(null, null, transaction!!.facility.uid)
+        search.value = SearchParametersModel(null, null, transaction.facility.uid)
     }
 
     fun getStockItems() = stockItems
@@ -99,7 +110,8 @@ class ManageStockViewModel @Inject constructor(
                 .observeOn(schedulerProvider.ui())
                 .subscribe(
                     { result ->
-                        search.value = SearchParametersModel(result, null, transaction!!.facility.uid)
+                        search.value =
+                            SearchParametersModel(result, null, transaction.facility.uid)
                     },
                     { it.printStackTrace() }
                 )
@@ -110,15 +122,21 @@ class ManageStockViewModel @Inject constructor(
                 .debounce(QUANTITY_ENTRY_DEBOUNCE, TimeUnit.MILLISECONDS)
                 .distinctUntilChanged { t1, t2 ->
                     t1.entry.item.id == t2.entry.item.id &&
-                            t1.position == t2.position &&
-                            t1.entry.qty == t2.entry.qty
+                        t1.position == t2.position &&
+                        t1.entry.qty == t2.entry.qty
                 }
                 .subscribeOn(schedulerProvider.io())
                 .observeOn(schedulerProvider.ui())
                 .subscribe(
                     {
                         disposable.add(
-                            evaluate(ruleValidationHelper, it, config.program, transaction!!, Date())
+                            evaluate(
+                                ruleValidationHelper,
+                                it,
+                                config.program,
+                                transaction,
+                                Date()
+                            )
                         )
                     },
                     {
@@ -133,7 +151,7 @@ class ManageStockViewModel @Inject constructor(
     }
 
     fun onScanCompleted(itemCode: String) {
-        search.postValue(SearchParametersModel(null, itemCode, transaction!!.facility.uid))
+        search.postValue(SearchParametersModel(null, itemCode, transaction.facility.uid))
     }
 
     fun setQuantity(
@@ -170,7 +188,7 @@ class ManageStockViewModel @Inject constructor(
 
     private fun getPopulatedEntries() = Collections.synchronizedList(itemsCache.values.toList())
 
-    fun getData(): ReviewStockData = ReviewStockData(transaction!!, getPopulatedEntries())
+    fun getData(): ReviewStockData = ReviewStockData(transaction, getPopulatedEntries())
 
     fun getItemCount(): Int = itemsCache.size
 }
