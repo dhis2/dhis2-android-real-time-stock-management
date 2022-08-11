@@ -1,4 +1,10 @@
 package org.dhis2.android.rtsm
 
-class RTSMApp {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class RTSMApp: Application() {
+
+
 }
