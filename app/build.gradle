@@ -59,6 +59,8 @@ android {
 }
 
 dependencies {
+
+    implementation project(":stock-managment")
     // DHIS2 Android SDK
     // remove the no-op version of Flipper added by DHIS2 Android SDK  to avoid duplicates
     implementation ("org.hisp.dhis:android-core:$versions.dhis_core") {
