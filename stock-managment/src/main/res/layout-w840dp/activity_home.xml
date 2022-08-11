@@ -129,7 +129,7 @@
                 android:id="@+id/choices_container"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/choices_top_margin"
+                android:layout_marginTop="@dimen/content_area_top_margin"
                 android:background="@color/light_grey"
                 android:paddingStart="@dimen/choices_padding_left"
                 android:paddingTop="@dimen/choices_padding_top"
@@ -145,7 +145,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/select_facility"
                     android:labelFor="@id/selected_facility_autocomplete"
-                    android:textAppearance="@style/TextLabel"
+                    style="@style/TextLabel"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/choices_container" />
@@ -250,10 +250,10 @@
             <TextView
                 android:id="@+id/recent_activity_label"
                 android:text="@string/recent_activity"
+                style="@style/TextLabel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/recent_activity_top_margin"
-                style="@style/TextLabel"
                 app:layout_constraintTop_toBottomOf="@id/choices_container"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -262,6 +262,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/recent_activity_list_top_margin"
+                android:visibility="invisible"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
