@@ -1,0 +1,2 @@
+org/dhis2/android/rtsm/BuildConfig.java
+ org.dhis2.android.rtsm.BuildConfig
