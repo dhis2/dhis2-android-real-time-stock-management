@@ -45,7 +45,6 @@ dependencies {
 
     // Room
     implementation "androidx.room:room-runtime:$versions.room"
-    implementation project(path: ':stock-managment')
     kapt("androidx.room:room-compiler:$versions.room")
     kapt("androidx.room:room-ktx:$versions.room")
     implementation "androidx.room:room-rxjava2:$versions.room"
@@ -57,4 +56,13 @@ dependencies {
     implementation "androidx.hilt:hilt-compiler:$versions.hilt_work"
     implementation "androidx.hilt:hilt-work:$versions.hilt_work"
     kapt "androidx.hilt:hilt-compiler:$versions.hilt_work"
+
+    // WorkManager
+    implementation "androidx.work:work-runtime:$versions.workmanager"
+    implementation "androidx.work:work-runtime-ktx:$versions.workmanager"
+    implementation "androidx.work:work-rxjava2:$versions.workmanager"
+    implementation "androidx.work:work-gcm:$versions.workmanager"
+
+    // Logging
+    implementation "com.jakewharton.timber:timber:$versions.timber"
 }
