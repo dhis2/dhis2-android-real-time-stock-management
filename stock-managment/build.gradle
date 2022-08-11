@@ -36,6 +36,12 @@ android {
 
 dependencies {
 
+    implementation ("org.hisp.dhis:android-core:$versions.dhis_core") {
+        exclude group: 'com.facebook.flipper'
+    }
+
+    implementation "org.hisp.dhis.rules:rule-engine:$versions.dhis_rules_engine"
+
     implementation "androidx.core:core-ktx:$versions.core_ktx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
     implementation "com.google.android.material:material:$versions.material"
