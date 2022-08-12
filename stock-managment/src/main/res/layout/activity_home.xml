@@ -5,10 +5,10 @@
 
     <data>
         <import type="android.view.View" />
-        <import type="com.baosystems.icrc.psm.data.TransactionType" />
+        <import type="org.dhis2.android.rtsm.data.TransactionType" />
         <variable
             name="viewModel"
-            type="com.baosystems.icrc.psm.ui.home.HomeViewModel" />
+            type="org.dhis2.android.rtsm.ui.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

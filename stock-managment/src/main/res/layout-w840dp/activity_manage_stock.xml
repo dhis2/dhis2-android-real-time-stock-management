@@ -7,7 +7,7 @@
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="com.baosystems.icrc.psm.ui.managestock.ManageStockViewModel" />
+            type="org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
