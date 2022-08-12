@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.adapters
+package org.dhis2.android.rtsm.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.data.persistence.UserActivity
-import com.baosystems.icrc.psm.databinding.ListItemRecentActivityBinding
-import com.baosystems.icrc.psm.utils.DateUtils
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.data.persistence.UserActivity
+import org.dhis2.android.rtsm.databinding.ListItemRecentActivityBinding
+import org.dhis2.android.rtsm.utils.DateUtils
 
 class ViewHolder private constructor(val binding: ListItemRecentActivityBinding):
     RecyclerView.ViewHolder(binding.root) {

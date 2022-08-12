@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.managestock
+package org.dhis2.android.rtsm.ui.managestock
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
@@ -11,16 +11,16 @@ import android.widget.TextView
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants.CLEAR_FIELD_DELAY
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.models.StockItem
-import com.baosystems.icrc.psm.data.models.Transaction
-import com.baosystems.icrc.psm.ui.base.ItemWatcher
-import com.baosystems.icrc.psm.ui.base.SpeechController
-import com.baosystems.icrc.psm.ui.base.TextInputDelegate
-import com.baosystems.icrc.psm.utils.KeyboardUtils
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.SpeechController
+import org.dhis2.android.rtsm.ui.base.TextInputDelegate
 import com.google.android.material.textfield.TextInputLayout
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants.CLEAR_FIELD_DELAY
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.models.StockItem
+import org.dhis2.android.rtsm.data.models.Transaction
+import org.dhis2.android.rtsm.utils.KeyboardUtils
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
 

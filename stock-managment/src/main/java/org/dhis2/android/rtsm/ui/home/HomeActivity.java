@@ -29,11 +29,9 @@ import com.baosystems.icrc.psm.data.OperationState;
 import com.baosystems.icrc.psm.data.TransactionType;
 import com.baosystems.icrc.psm.data.persistence.UserActivity;
 import com.baosystems.icrc.psm.databinding.ActivityHomeBinding;
-import com.baosystems.icrc.psm.ui.adapters.RecentActivityAdapter;
-import com.baosystems.icrc.psm.ui.base.BaseActivity;
+
+import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.base.GenericListAdapter;
-import com.baosystems.icrc.psm.ui.home.HomeViewModel;
-import com.baosystems.icrc.psm.ui.home.RecentActivityItemDividerDecoration;
 import com.baosystems.icrc.psm.ui.managestock.ManageStockActivity;
 import com.baosystems.icrc.psm.utils.DateUtils;
 import com.google.android.material.button.MaterialButton;

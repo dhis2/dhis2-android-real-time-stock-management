@@ -1,7 +1,7 @@
 package org.dhis2.android.rtsm.data
 
-import com.baosystems.icrc.psm.data.models.StockEntry
-import com.baosystems.icrc.psm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.data.models.StockEntry
 
 data class RowAction(
     val entry: StockEntry,

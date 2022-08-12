@@ -1,6 +1,6 @@
-package com.baosystems.icrc.psm.ui.base
+package org.dhis2.android.rtsm.ui.base
 
-import com.baosystems.icrc.psm.data.SpeechRecognitionState
+import org.dhis2.android.rtsm.data.SpeechRecognitionState
 
 interface SpeechController {
     fun startListening(callback: (state: SpeechRecognitionState) -> Unit)

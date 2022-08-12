@@ -1,14 +1,14 @@
-package com.baosystems.icrc.psm.ui.base
+package org.dhis2.android.rtsm.ui.base
 
 import android.content.res.ColorStateList
 import android.os.CountDownTimer
 import android.widget.EditText
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants.CLEAR_ICON
-import com.baosystems.icrc.psm.data.SpeechRecognitionState
 import com.google.android.material.textfield.TextInputLayout
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants.CLEAR_ICON
+import org.dhis2.android.rtsm.data.SpeechRecognitionState
 import org.hisp.dhis.rules.models.RuleEffect
 import timber.log.Timber
 

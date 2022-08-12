@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.base
+package org.dhis2.android.rtsm.ui.base
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -25,9 +25,11 @@ import com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_MESSAGE
 import com.baosystems.icrc.psm.data.SpeechRecognitionState
 import com.baosystems.icrc.psm.data.SpeechRecognitionState.Errored
 import com.baosystems.icrc.psm.data.TransactionType
+import com.baosystems.icrc.psm.ui.base.BaseViewModel
+import com.baosystems.icrc.psm.ui.base.SpeechControllerImpl
+import com.baosystems.icrc.psm.ui.base.SpeechRecognitionAwareViewModel
 import com.baosystems.icrc.psm.ui.scanner.ScannerActivity
 import com.baosystems.icrc.psm.ui.settings.SettingsActivity
-import com.baosystems.icrc.psm.utils.ActivityManager.Companion.checkPermission
 import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showErrorMessage
 import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showInfoMessage
 import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showToast

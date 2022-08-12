@@ -25,7 +25,7 @@ import androidx.work.WorkInfo;
 import com.baosystems.icrc.psm.R;
 import com.baosystems.icrc.psm.data.AppConfig;
 import com.baosystems.icrc.psm.databinding.ActivitySyncBinding;
-import com.baosystems.icrc.psm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.home.HomeActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.baosystems.icrc.psm.utils.ConfigUtils;

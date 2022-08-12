@@ -1,8 +1,10 @@
 package com.baosystems.icrc.psm.ui.base
 
 import com.baosystems.icrc.psm.data.SpeechRecognitionState
+import org.dhis2.android.rtsm.ui.base.SpeechController
 
-class SpeechControllerImpl(private val viewModel: SpeechRecognitionAwareViewModel): SpeechController {
+class SpeechControllerImpl(private val viewModel: SpeechRecognitionAwareViewModel):
+    SpeechController {
     private var callback: Function1<SpeechRecognitionState, Unit>? = null
 
     override fun onStateChange(state: SpeechRecognitionState) {

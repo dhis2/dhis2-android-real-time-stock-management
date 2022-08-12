@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.home
+package org.dhis2.android.rtsm.ui.home
 
 import android.content.Context
 import android.graphics.Canvas

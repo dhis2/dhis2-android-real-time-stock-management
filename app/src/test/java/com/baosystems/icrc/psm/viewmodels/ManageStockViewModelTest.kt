@@ -20,8 +20,8 @@ import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.rules.RuleValidationHelper
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
 import com.baosystems.icrc.psm.services.scheduler.TrampolineSchedulerProvider
-import com.baosystems.icrc.psm.ui.base.ItemWatcher
-import com.baosystems.icrc.psm.ui.managestock.ManageStockViewModel
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel
 import com.baosystems.icrc.psm.utils.ParcelUtils
 import com.github.javafaker.Faker
 import io.reactivex.disposables.CompositeDisposable

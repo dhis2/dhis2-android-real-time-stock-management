@@ -22,7 +22,7 @@ import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
 import com.baosystems.icrc.psm.services.scheduler.TestSchedulerProvider
 import com.baosystems.icrc.psm.services.scheduler.TrampolineSchedulerProvider
-import com.baosystems.icrc.psm.ui.home.HomeViewModel
+import org.dhis2.android.rtsm.ui.home.HomeViewModel
 import com.baosystems.icrc.psm.utils.ParcelUtils
 import com.baosystems.icrc.psm.utils.humanReadableDate
 import io.reactivex.Single

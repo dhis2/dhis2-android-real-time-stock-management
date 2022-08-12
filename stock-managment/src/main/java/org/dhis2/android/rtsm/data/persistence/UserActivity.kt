@@ -3,7 +3,7 @@ package org.dhis2.android.rtsm.data.persistence
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.baosystems.icrc.psm.data.TransactionType
+import org.dhis2.android.rtsm.data.TransactionType
 import java.time.LocalDateTime
 
 @Entity(tableName = "user_activities")

@@ -6,8 +6,8 @@ import android.text.InputType
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.data.models.Transaction
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.data.models.Transaction
 
 class KeyboardUtils {
     companion object {

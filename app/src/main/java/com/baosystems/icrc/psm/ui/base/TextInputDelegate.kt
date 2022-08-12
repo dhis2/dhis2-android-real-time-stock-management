@@ -9,6 +9,8 @@ import com.baosystems.icrc.psm.R
 import com.baosystems.icrc.psm.commons.Constants.CLEAR_ICON
 import com.baosystems.icrc.psm.data.SpeechRecognitionState
 import com.google.android.material.textfield.TextInputLayout
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.SpeechController
 import org.hisp.dhis.rules.models.RuleEffect
 import timber.log.Timber
 

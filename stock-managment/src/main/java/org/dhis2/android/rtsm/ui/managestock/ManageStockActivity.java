@@ -1,8 +1,8 @@
 package org.dhis2.android.rtsm.ui.managestock;
 
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_TRANSACTION;
-import static com.baosystems.icrc.psm.utils.Utils.isValidStockOnHand;
+import static org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
+import static org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_TRANSACTION;
+import static org.dhis2.android.rtsm.utils.Utils.isValidStockOnHand;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,24 +24,23 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.baosystems.icrc.psm.R;
-import com.baosystems.icrc.psm.data.AppConfig;
-import com.baosystems.icrc.psm.data.OperationState;
-import com.baosystems.icrc.psm.data.TransactionType;
-import com.baosystems.icrc.psm.data.models.StockItem;
-import com.baosystems.icrc.psm.data.models.Transaction;
-import com.baosystems.icrc.psm.databinding.ActivityManageStockBinding;
-import com.baosystems.icrc.psm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.R;
+import org.dhis2.android.rtsm.data.AppConfig;
+import org.dhis2.android.rtsm.data.TransactionType;
+import org.dhis2.android.rtsm.data.models.StockItem;
+import org.dhis2.android.rtsm.data.models.Transaction;
+import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.base.BaseViewModel;
-import com.baosystems.icrc.psm.ui.base.ItemWatcher;
-import com.baosystems.icrc.psm.ui.managestock.ManageStockAdapter;
-import com.baosystems.icrc.psm.ui.managestock.ManageStockViewModel;
+import org.dhis2.android.rtsm.ui.base.ItemWatcher;
+
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
+import org.dhis2.android.rtsm.databinding.ActivityManageStockBinding;
+import org.dhis2.android.rtsm.utils.ActivityManager;
 import org.hisp.dhis.rules.models.RuleActionAssign;
 import org.hisp.dhis.rules.models.RuleEffect;
 import org.jetbrains.annotations.NotNull;

@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.base
+package org.dhis2.android.rtsm.ui.base
 
 import org.hisp.dhis.rules.models.RuleEffect
 

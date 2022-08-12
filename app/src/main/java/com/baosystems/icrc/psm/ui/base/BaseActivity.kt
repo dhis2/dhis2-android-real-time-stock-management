@@ -36,6 +36,7 @@ import com.baosystems.icrc.psm.utils.NetworkUtils.Companion.isOnline
 import com.journeyapps.barcodescanner.ScanIntentResult
 import com.journeyapps.barcodescanner.ScanOptions
 import io.reactivex.disposables.CompositeDisposable
+import org.dhis2.android.rtsm.ui.base.SpeechController
 import timber.log.Timber
 
 /**
