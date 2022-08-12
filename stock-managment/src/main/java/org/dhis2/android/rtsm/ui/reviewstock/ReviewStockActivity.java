@@ -33,7 +33,6 @@ import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;
 import com.baosystems.icrc.psm.ui.home.HomeActivity;
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockAdapter;
-import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockViewModel;
 import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.journeyapps.barcodescanner.ScanContract;

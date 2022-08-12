@@ -1,35 +1,35 @@
-package com.baosystems.icrc.psm.ui.reviewstock
+package org.dhis2.android.rtsm.ui.reviewstock
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.Transformations
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_STOCK_ENTRIES
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.ReviewStockData
-import com.baosystems.icrc.psm.data.RowAction
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.data.models.StockEntry
-import com.baosystems.icrc.psm.data.models.Transaction
-import com.baosystems.icrc.psm.data.persistence.UserActivity
-import com.baosystems.icrc.psm.data.persistence.UserActivityRepository
-import com.baosystems.icrc.psm.exceptions.InitializationException
-import com.baosystems.icrc.psm.services.SpeechRecognitionManager
-import com.baosystems.icrc.psm.services.StockManager
-import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
-import com.baosystems.icrc.psm.services.rules.RuleValidationHelper
-import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import org.dhis2.android.rtsm.ui.base.ItemWatcher
-import com.baosystems.icrc.psm.ui.base.SpeechRecognitionAwareViewModel
 import com.jakewharton.rxrelay2.PublishRelay
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_STOCK_ENTRIES
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.ReviewStockData
+import org.dhis2.android.rtsm.data.RowAction
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.data.models.StockEntry
+import org.dhis2.android.rtsm.data.models.Transaction
+import org.dhis2.android.rtsm.data.persistence.UserActivity
+import org.dhis2.android.rtsm.data.persistence.UserActivityRepository
+import org.dhis2.android.rtsm.exceptions.InitializationException
+import org.dhis2.android.rtsm.services.SpeechRecognitionManager
+import org.dhis2.android.rtsm.services.StockManager
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.SpeechRecognitionAwareViewModel
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
 import timber.log.Timber
 import java.time.LocalDateTime
-import java.util.Date
+import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
@@ -215,7 +215,7 @@ class ReviewStockViewModel @Inject constructor(
      */
     fun canCommit(): Boolean {
         val items = _reviewedItems.value
-        return items?.size ?: 0 > 0 && (items?.none { it.hasError } ?: false)
+        return (items?.size ?: 0) > 0 && (items?.none { it.hasError } ?: false)
     }
 
     fun getReviewedItemsCount() = _reviewedItemsCount
