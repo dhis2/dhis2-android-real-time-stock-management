@@ -10,7 +10,7 @@ import com.baosystems.icrc.psm.services.SyncManager
 import com.baosystems.icrc.psm.services.UserManager
 import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import com.baosystems.icrc.psm.ui.base.BaseViewModel
+import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject

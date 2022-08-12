@@ -3,8 +3,6 @@ package org.dhis2.android.rtsm.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
-import com.baosystems.icrc.psm.ui.base.BaseViewModel
-
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import org.dhis2.android.rtsm.R
@@ -21,6 +19,7 @@ import org.dhis2.android.rtsm.exceptions.UserIntentParcelCreationException
 import org.dhis2.android.rtsm.services.MetadataManager
 import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
 import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import org.dhis2.android.rtsm.utils.ParcelUtils
 import org.dhis2.android.rtsm.utils.humanReadableDate
 import org.hisp.dhis.android.core.option.Option

@@ -2,6 +2,7 @@ package com.baosystems.icrc.psm.ui.base
 
 import com.baosystems.icrc.psm.data.SpeechRecognitionState
 import org.dhis2.android.rtsm.ui.base.SpeechController
+import org.dhis2.android.rtsm.ui.base.SpeechRecognitionAwareViewModel
 
 class SpeechControllerImpl(private val viewModel: SpeechRecognitionAwareViewModel):
     SpeechController {

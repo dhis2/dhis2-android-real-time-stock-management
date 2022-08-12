@@ -26,15 +26,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.AppConfig;
+import org.dhis2.android.rtsm.data.OperationState;
 import org.dhis2.android.rtsm.data.TransactionType;
 import org.dhis2.android.rtsm.data.models.StockItem;
 import org.dhis2.android.rtsm.data.models.Transaction;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
-import com.baosystems.icrc.psm.ui.base.BaseViewModel;
+import org.dhis2.android.rtsm.ui.base.BaseViewModel;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;
 
-import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockActivity;
-import com.baosystems.icrc.psm.utils.ActivityManager;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;

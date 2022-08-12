@@ -17,7 +17,7 @@ import com.baosystems.icrc.psm.exceptions.UserIntentParcelCreationException
 import com.baosystems.icrc.psm.services.MetadataManager
 import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import com.baosystems.icrc.psm.ui.base.BaseViewModel
+import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import com.baosystems.icrc.psm.utils.ParcelUtils
 import com.baosystems.icrc.psm.utils.humanReadableDate
 import dagger.hilt.android.lifecycle.HiltViewModel

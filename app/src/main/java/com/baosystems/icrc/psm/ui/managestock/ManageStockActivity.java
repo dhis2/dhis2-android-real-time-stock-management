@@ -32,7 +32,7 @@ import com.baosystems.icrc.psm.data.models.StockItem;
 import com.baosystems.icrc.psm.data.models.Transaction;
 import com.baosystems.icrc.psm.databinding.ActivityManageStockBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
-import com.baosystems.icrc.psm.ui.base.BaseViewModel;
+import org.dhis2.android.rtsm.ui.base.BaseViewModel;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;
