@@ -29,6 +29,7 @@ import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.AppConfig;
 import org.dhis2.android.rtsm.data.TransactionType;
 import org.dhis2.android.rtsm.data.models.StockEntry;
+//import org.dhis2.android.rtsm.databinding.ActivityReviewStockBinding;
 import org.dhis2.android.rtsm.databinding.ActivityReviewStockBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;

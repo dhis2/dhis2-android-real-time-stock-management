@@ -12,18 +12,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.data.models.StockEntry
-import com.baosystems.icrc.psm.data.models.Transaction
 import org.dhis2.android.rtsm.ui.base.ItemWatcher
 import org.dhis2.android.rtsm.ui.base.SpeechController
 import org.dhis2.android.rtsm.ui.base.TextInputDelegate
-import com.baosystems.icrc.psm.utils.ActivityManager
-import com.baosystems.icrc.psm.utils.KeyboardUtils
 import com.google.android.material.textfield.TextInputLayout
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.data.models.StockEntry
+import org.dhis2.android.rtsm.data.models.Transaction
+import org.dhis2.android.rtsm.utils.ActivityManager
+import org.dhis2.android.rtsm.utils.KeyboardUtils
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
 
