@@ -1,6 +1,7 @@
 package org.dhis2.android.rtsm.ui.home;
 
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
+
+import static org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -23,22 +24,25 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.baosystems.icrc.psm.R;
-import com.baosystems.icrc.psm.data.AppConfig;
-import com.baosystems.icrc.psm.data.OperationState;
-import com.baosystems.icrc.psm.data.TransactionType;
-import com.baosystems.icrc.psm.data.persistence.UserActivity;
-import com.baosystems.icrc.psm.databinding.ActivityHomeBinding;
 
+import org.dhis2.android.rtsm.R;
+import org.dhis2.android.rtsm.data.AppConfig;
+import org.dhis2.android.rtsm.data.OperationState;
+import org.dhis2.android.rtsm.data.TransactionType;
+import org.dhis2.android.rtsm.data.persistence.UserActivity;
+import org.dhis2.android.rtsm.databinding.ActivityHomeBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.ui.managestock.ManageStockActivity;
+import org.dhis2.android.rtsm.utils.DateUtils;
+import org.hisp.dhis.android.core.option.Option;
+import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
+
 import com.baosystems.icrc.psm.ui.base.GenericListAdapter;
-import com.baosystems.icrc.psm.ui.managestock.ManageStockActivity;
-import com.baosystems.icrc.psm.utils.DateUtils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.datepicker.MaterialDatePicker;
 
-import org.hisp.dhis.android.core.option.Option;
-import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
+//import org.hisp.dhis.android.core.option.Option;
+//import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
 
 import java.util.HashMap;
 import java.util.List;

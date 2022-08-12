@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-5:12
+ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-7:12
 	package
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml
