@@ -1,9 +1,11 @@
 package org.dhis2.android.rtsm.ui.reviewstock;
 
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_MESSAGE;
-import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_STOCK_ENTRIES;
-import static com.baosystems.icrc.psm.utils.Utils.isValidStockOnHand;
+//import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_APP_CONFIG;
+//import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_MESSAGE;
+//import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_STOCK_ENTRIES;
+//import static com.baosystems.icrc.psm.utils.Utils.isValidStockOnHand;
+
+import static org.dhis2.android.rtsm.utils.Utils.isValidStockOnHand;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,20 +26,22 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.baosystems.icrc.psm.R;
-import com.baosystems.icrc.psm.data.AppConfig;
-import com.baosystems.icrc.psm.data.TransactionType;
-import com.baosystems.icrc.psm.data.models.StockEntry;
-import com.baosystems.icrc.psm.databinding.ActivityReviewStockBinding;
+//import com.baosystems.icrc.psm.R;
+//import com.baosystems.icrc.psm.data.AppConfig;
+//import com.baosystems.icrc.psm.data.TransactionType;
+//import com.baosystems.icrc.psm.data.models.StockEntry;
+//import com.baosystems.icrc.psm.databinding.ActivityReviewStockBinding;
+import org.dhis2.android.rtsm.R;
+import org.dhis2.android.rtsm.data.models.StockEntry;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;
-import com.baosystems.icrc.psm.ui.home.HomeActivity;
+//import com.baosystems.icrc.psm.ui.home.HomeActivity;
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockAdapter;
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockViewModel;
-import com.baosystems.icrc.psm.utils.ActivityManager;
+//import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.google.android.material.textfield.TextInputEditText;
-import com.journeyapps.barcodescanner.ScanContract;
-import com.journeyapps.barcodescanner.ScanOptions;
+//import com.journeyapps.barcodescanner.ScanContract;
+//import com.journeyapps.barcodescanner.ScanOptions;
 
 import org.hisp.dhis.rules.models.RuleActionAssign;
 import org.hisp.dhis.rules.models.RuleEffect;
