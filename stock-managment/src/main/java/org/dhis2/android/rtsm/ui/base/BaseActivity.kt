@@ -18,26 +18,20 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE
-import com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_MESSAGE
-import com.baosystems.icrc.psm.data.SpeechRecognitionState
-import com.baosystems.icrc.psm.data.SpeechRecognitionState.Errored
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.ui.base.BaseViewModel
-import com.baosystems.icrc.psm.ui.base.SpeechControllerImpl
-import com.baosystems.icrc.psm.ui.base.SpeechRecognitionAwareViewModel
-import com.baosystems.icrc.psm.ui.scanner.ScannerActivity
-import com.baosystems.icrc.psm.ui.settings.SettingsActivity
-import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showErrorMessage
-import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showInfoMessage
-import com.baosystems.icrc.psm.utils.ActivityManager.Companion.showToast
-import com.baosystems.icrc.psm.utils.LocaleManager
-import com.baosystems.icrc.psm.utils.NetworkUtils.Companion.isOnline
 import com.journeyapps.barcodescanner.ScanIntentResult
 import com.journeyapps.barcodescanner.ScanOptions
 import io.reactivex.disposables.CompositeDisposable
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE
+import org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_MESSAGE
+import org.dhis2.android.rtsm.data.SpeechRecognitionState
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showErrorMessage
+import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showInfoMessage
+import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showToast
+import org.dhis2.android.rtsm.utils.LocaleManager
+import org.dhis2.android.rtsm.utils.NetworkUtils.Companion.isOnline
 import timber.log.Timber
 
 /**
@@ -185,7 +179,7 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.action_settings -> {
-                startActivity(SettingsActivity.getSettingsActivityIntent(this))
+                //startActivity(SettingsActivity.getSettingsActivityIntent(this))
                 return true
             }
             android.R.id.home -> {
@@ -254,7 +248,7 @@ abstract class BaseActivity : AppCompatActivity() {
     ) {
         speechStatus.observe(this) { state: SpeechRecognitionState ->
             Timber.d("SpeechRecognitionState: %s", state)
-            if (state is Errored) {
+            if (state is SpeechRecognitionState.Errored) {
                 handleSpeechError(state.code, state.data)
             }
             speechController?.onStateChange(state)

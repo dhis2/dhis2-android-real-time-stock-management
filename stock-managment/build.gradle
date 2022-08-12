@@ -14,6 +14,21 @@ android {
     defaultConfig {
         minSdk versions.minSdk
         targetSdk versions.targetSdk
+        versionCode versions.versionCode
+        versionName versions.versionName
+        multiDexEnabled true
+
+        setProperty("archivesBaseName", "psm-v" + versions.versionName)
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation": "$projectDir/schemas".toString(),
+                        "room.incremental": "true",
+                        "room.expandProjection": "true"
+                ]
+            }
+        }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -59,6 +74,9 @@ dependencies {
     kapt("androidx.room:room-ktx:$versions.room")
     implementation "androidx.room:room-rxjava2:$versions.room"
 
+    implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+    implementation "com.jakewharton.rxrelay2:rxrelay:$versions.rxrelay"
+
     // DI
     implementation "com.google.dagger:hilt-android:$versions.hilt"
     kapt "com.google.dagger:hilt-compiler:$versions.hilt"
@@ -67,11 +85,17 @@ dependencies {
     implementation "androidx.hilt:hilt-work:$versions.hilt_work"
     kapt "androidx.hilt:hilt-compiler:$versions.hilt_work"
 
+    // Preferences
+    implementation "androidx.preference:preference-ktx:$versions.preference_ktx"
+
     // WorkManager
     implementation "androidx.work:work-runtime:$versions.workmanager"
     implementation "androidx.work:work-runtime-ktx:$versions.workmanager"
     implementation "androidx.work:work-rxjava2:$versions.workmanager"
     implementation "androidx.work:work-gcm:$versions.workmanager"
+
+    // Barcode scanner
+    implementation "com.journeyapps:zxing-android-embedded:$versions.zxing_android_embedded"
 
     // Logging
     implementation "com.jakewharton.timber:timber:$versions.timber"
