@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.reviewstock
+package org.dhis2.android.rtsm.ui.reviewstock;
 
 import android.content.Context
 import android.content.res.Resources

@@ -40,6 +40,7 @@ import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
 import org.dhis2.android.rtsm.databinding.ActivityManageStockBinding;
+import org.dhis2.android.rtsm.ui.reviewstock.ReviewStockActivity;
 import org.dhis2.android.rtsm.utils.ActivityManager;
 import org.hisp.dhis.rules.models.RuleActionAssign;
 import org.hisp.dhis.rules.models.RuleEffect;
