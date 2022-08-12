@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.ui.adapters
+package com.baosystems.icrc.psm.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
@@ -46,19 +46,21 @@ class ViewHolder private constructor(val binding: ListItemRecentActivityBinding)
     }
 
     companion object {
-        fun from(parent: ViewGroup): org.dhis2.android.rtsm.ui.home.ViewHolder {
+        fun from(parent: ViewGroup): ViewHolder {
             val view = ListItemRecentActivityBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
             )
 
-            return org.dhis2.android.rtsm.ui.home.ViewHolder(view)
+            return ViewHolder(view)
         }
     }
 }
 
-class RecentActivityAdapter: ListAdapter<UserActivity, org.dhis2.android.rtsm.ui.home.ViewHolder> (DIFF_CALLBACK) {
+class RecentActivityAdapter: ListAdapter<UserActivity, ViewHolder> (
+    DIFF_CALLBACK
+) {
     companion object {
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<UserActivity>() {
             override fun areItemsTheSame(oldItem: UserActivity, newItem: UserActivity) = oldItem == newItem
@@ -71,7 +73,7 @@ class RecentActivityAdapter: ListAdapter<UserActivity, org.dhis2.android.rtsm.ui
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int) = ViewHolder.from(parent)
 
-    override fun onBindViewHolder(viewHolder: org.dhis2.android.rtsm.ui.home.ViewHolder, position: Int) {
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val item = getItem(position)
         viewHolder.bindTo(item)
     }

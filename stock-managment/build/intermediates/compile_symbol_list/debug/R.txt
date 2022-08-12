@@ -4045,6 +4045,7 @@ int id alertTitle 0x0
 int id aligned 0x0
 int id animateToEnd 0x0
 int id animateToStart 0x0
+int id app_version_text_view 0x0
 int id arc 0x0
 int id asConfigured 0x0
 int id async 0x0
@@ -4052,6 +4053,8 @@ int id auto 0x0
 int id autoComplete 0x0
 int id autoCompleteToEnd 0x0
 int id autoCompleteToStart 0x0
+int id barcode_scanner 0x0
+int id barcode_scanner_btn_close 0x0
 int id barrier 0x0
 int id baseline 0x0
 int id blocking 0x0
@@ -4080,6 +4083,10 @@ int id chronometer 0x0
 int id circle_center 0x0
 int id clear_text 0x0
 int id clockwise 0x0
+int id closeGuideButton 0x0
+int id colReviewItemQty 0x0
+int id col_review_item_name 0x0
+int id col_stock_on_hand 0x0
 int id compress 0x0
 int id confirm_button 0x0
 int id container 0x0
@@ -4135,6 +4142,7 @@ int id end 0x0
 int id endToStart 0x0
 int id expand_activities_button 0x0
 int id expanded_menu 0x0
+int id fab_commit_stock 0x0
 int id fab_manage_stock 0x0
 int id fab_review_stock 0x0
 int id facility_text_view 0x0
@@ -4146,6 +4154,7 @@ int id fitEnd 0x0
 int id fitStart 0x0
 int id fitXY 0x0
 int id fixed 0x0
+int id flashlight_btn_switch 0x0
 int id flip 0x0
 int id floating 0x0
 int id forever 0x0
@@ -4179,6 +4188,9 @@ int id item_touch_helper_previous_elevation 0x0
 int id jumpToEnd 0x0
 int id jumpToStart 0x0
 int id labeled 0x0
+int id last_sync_date_text_view 0x0
+int id last_sync_desc_text_view 0x0
+int id last_sync_icon_image_view 0x0
 int id layout 0x0
 int id left 0x0
 int id leftToRight 0x0
@@ -4250,7 +4262,12 @@ int id navigation_bar_item_labels_group 0x0
 int id navigation_bar_item_large_label_view 0x0
 int id navigation_bar_item_small_label_view 0x0
 int id navigation_header_container 0x0
+int id negativeValueTextView 0x0
 int id no_results_text_view 0x0
+int id non_members_container 0x0
+int id non_members_label 0x0
+int id non_members_left_line 0x0
+int id non_members_right_line 0x0
 int id none 0x0
 int id normal 0x0
 int id notification_background 0x0
@@ -4274,6 +4291,7 @@ int id pathRelative 0x0
 int id percent 0x0
 int id pin 0x0
 int id position 0x0
+int id positiveValueTextView 0x0
 int id postLayout 0x0
 int id preferences_detail 0x0
 int id preferences_header 0x0
@@ -4294,7 +4312,11 @@ int id recent_activity_list 0x0
 int id recent_activity_message_textview 0x0
 int id rectangles 0x0
 int id recycler_view 0x0
+int id remove_stock_item_image_button 0x0
 int id reverseSawtooth 0x0
+int id review_item_qty_layout 0x0
+int id review_stock_item_name_text_view 0x0
+int id review_stock_on_hand_value_text_view 0x0
 int id right 0x0
 int id rightToLeft 0x0
 int id right_icon 0x0
@@ -4317,7 +4339,9 @@ int id search_button 0x0
 int id search_close_btn 0x0
 int id search_edit_frame 0x0
 int id search_field_layout 0x0
+int id search_field_text_layout 0x0
 int id search_go_btn 0x0
+int id search_input_field 0x0
 int id search_mag_icon 0x0
 int id search_plate 0x0
 int id search_src_text 0x0
@@ -4331,6 +4355,7 @@ int id selected 0x0
 int id selected_facility_autocomplete 0x0
 int id selected_facility_text_view 0x0
 int id selection_type 0x0
+int id settings_container 0x0
 int id shortcut 0x0
 int id sin 0x0
 int id slide 0x0
@@ -4544,6 +4569,10 @@ int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
 int layout activity_home 0x0
 int layout activity_manage_stock 0x0
+int layout activity_review_stock 0x0
+int layout activity_scanner 0x0
+int layout activity_settings 0x0
+int layout barcode_scanner 0x0
 int layout browser_actions_context_menu_page 0x0
 int layout browser_actions_context_menu_row 0x0
 int layout custom_dialog 0x0
@@ -4563,6 +4592,7 @@ int layout design_navigation_menu_item 0x0
 int layout design_text_input_end_icon 0x0
 int layout design_text_input_start_icon 0x0
 int layout expand_button 0x0
+int layout footer 0x0
 int layout image_frame 0x0
 int layout list_item 0x0
 int layout list_item_recent_activity 0x0
@@ -4637,9 +4667,12 @@ int layout preference_widget_seekbar 0x0
 int layout preference_widget_seekbar_material 0x0
 int layout preference_widget_switch 0x0
 int layout preference_widget_switch_compat 0x0
+int layout review_stock_item_entry 0x0
+int layout search_field 0x0
 int layout select_dialog_item_material 0x0
 int layout select_dialog_multichoice_material 0x0
 int layout select_dialog_singlechoice_material 0x0
+int layout stock_quantities_guide 0x0
 int layout stock_table_header 0x0
 int layout support_simple_spinner_dropdown_item 0x0
 int layout test_action_chip 0x0
@@ -4658,6 +4691,8 @@ int layout text_view_with_line_height_from_layout 0x0
 int layout text_view_with_line_height_from_style 0x0
 int layout text_view_with_theme_line_height 0x0
 int layout text_view_without_line_height 0x0
+int layout textview_with_line_endings 0x0
+int layout toolbar 0x0
 int layout zxing_barcode_scanner 0x0
 int layout zxing_capture 0x0
 int menu more_options 0x0

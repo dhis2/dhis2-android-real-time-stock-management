@@ -8,9 +8,9 @@ import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
 import android.text.TextUtils
 import androidx.lifecycle.MutableLiveData
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.data.SpeechRecognitionState
-import com.baosystems.icrc.psm.utils.Utils
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.data.SpeechRecognitionState
+import org.dhis2.android.rtsm.utils.Utils
 import timber.log.Timber
 import java.util.*
 

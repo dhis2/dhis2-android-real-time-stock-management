@@ -2,11 +2,10 @@ package org.dhis2.android.rtsm.services
 
 import androidx.lifecycle.LiveData
 import androidx.work.*
-import com.baosystems.icrc.psm.data.WorkItem
-import com.baosystems.icrc.psm.data.WorkType.DATA
-import com.baosystems.icrc.psm.data.WorkType.METADATA
-import com.baosystems.icrc.psm.services.workers.SyncDataWorker
-import com.baosystems.icrc.psm.services.workers.SyncMetadataWorker
+import org.dhis2.android.rtsm.data.WorkItem
+import org.dhis2.android.rtsm.data.WorkType
+import org.dhis2.android.rtsm.services.workers.SyncDataWorker
+import org.dhis2.android.rtsm.services.workers.SyncMetadataWorker
 import java.util.concurrent.TimeUnit
 
 class WorkManagerControllerImpl(private val workManager: WorkManager): WorkManagerController {
@@ -55,8 +54,8 @@ class WorkManagerControllerImpl(private val workManager: WorkManager): WorkManag
 
     private fun createOneTimeBuilder(workItem: WorkItem): OneTimeWorkRequest.Builder {
         val builder = when (workItem.type) {
-            METADATA -> OneTimeWorkRequest.Builder(SyncMetadataWorker::class.java)
-            DATA -> OneTimeWorkRequest.Builder(SyncDataWorker::class.java)
+            WorkType.METADATA -> OneTimeWorkRequest.Builder(SyncMetadataWorker::class.java)
+            WorkType.DATA -> OneTimeWorkRequest.Builder(SyncDataWorker::class.java)
         }
 
         builder.apply {
@@ -76,14 +75,14 @@ class WorkManagerControllerImpl(private val workManager: WorkManager): WorkManag
         val seconds = workItem.delayInSecs ?: 0
 
         val builder = when (workItem.type) {
-            METADATA -> {
+            WorkType.METADATA -> {
                 PeriodicWorkRequest.Builder(
                     SyncMetadataWorker::class.java,
                     seconds,
                     TimeUnit.SECONDS
                 )
             }
-            DATA -> {
+            WorkType.DATA -> {
                 PeriodicWorkRequest.Builder(
                     SyncDataWorker::class.java,
                     seconds,

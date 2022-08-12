@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.baosystems.icrc.psm.ui.home.HomeActivity">
+        tools:context="org.dhis2.android.rtsm.ui.home.HomeActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/toolbar_layout"

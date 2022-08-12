@@ -25,7 +25,8 @@ import androidx.work.WorkInfo;
 import com.baosystems.icrc.psm.R;
 import com.baosystems.icrc.psm.data.OperationState;
 import com.baosystems.icrc.psm.databinding.ActivitySettingsBinding;
-import org.dhis2.android.rtsm.ui.base.BaseActivity;
+
+import com.baosystems.icrc.psm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.login.LoginActivity;
 import com.baosystems.icrc.psm.ui.splashscreen.SplashActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;

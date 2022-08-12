@@ -8,7 +8,7 @@
         <import type="com.baosystems.icrc.psm.data.TransactionType" />
         <variable
             name="viewModel"
-            type="org.dhis2.android.rtsm.ui.home.HomeViewModel" />
+            type="com.baosystems.icrc.psm.ui.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

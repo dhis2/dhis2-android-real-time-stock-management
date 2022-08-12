@@ -4,7 +4,6 @@ import com.baosystems.icrc.psm.data.SpeechRecognitionState
 import com.baosystems.icrc.psm.services.SpeechRecognitionManager
 import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import javax.inject.Inject
 
 open class SpeechRecognitionAwareViewModel @Inject constructor(

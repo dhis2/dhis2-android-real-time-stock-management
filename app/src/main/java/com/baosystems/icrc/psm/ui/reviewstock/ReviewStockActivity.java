@@ -29,15 +29,15 @@ import com.baosystems.icrc.psm.data.AppConfig;
 import com.baosystems.icrc.psm.data.TransactionType;
 import com.baosystems.icrc.psm.data.models.StockEntry;
 import com.baosystems.icrc.psm.databinding.ActivityReviewStockBinding;
-import org.dhis2.android.rtsm.ui.base.BaseActivity;
-import org.dhis2.android.rtsm.ui.base.ItemWatcher;
+
+import com.baosystems.icrc.psm.ui.base.BaseActivity;
+import com.baosystems.icrc.psm.ui.base.ItemWatcher;
 import com.baosystems.icrc.psm.ui.home.HomeActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import org.dhis2.android.rtsm.ui.reviewstock.ReviewStockViewModel;
 import org.hisp.dhis.rules.models.RuleActionAssign;
 import org.hisp.dhis.rules.models.RuleEffect;
 
@@ -48,7 +48,7 @@ import io.reactivex.disposables.CompositeDisposable;
 
 @AndroidEntryPoint
 public class ReviewStockActivity extends BaseActivity {
-    private org.dhis2.android.rtsm.ui.reviewstock.ReviewStockViewModel viewModel;
+    private ReviewStockViewModel viewModel;
     private ActivityReviewStockBinding binding;
     private ReviewStockAdapter adapter;
 
@@ -56,7 +56,7 @@ public class ReviewStockActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        viewModel = (org.dhis2.android.rtsm.ui.reviewstock.ReviewStockViewModel) getViewModel();
+        viewModel = (ReviewStockViewModel) getViewModel();
         binding = (ActivityReviewStockBinding) getViewBinding();
         binding.setViewModel(viewModel);
         binding.setLifecycleOwner(this);
@@ -246,7 +246,7 @@ public class ReviewStockActivity extends BaseActivity {
     @Nullable
     @Override
     public Integer getCustomTheme(@NonNull ViewModel viewModel) {
-        switch (((org.dhis2.android.rtsm.ui.reviewstock.ReviewStockViewModel) viewModel).getTransaction().getTransactionType()) {
+        switch (((ReviewStockViewModel) viewModel).getTransaction().getTransactionType()) {
             case DISTRIBUTION:
                 return R.style.Theme_App_Distribution;
             case DISCARD:

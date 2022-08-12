@@ -11,7 +11,7 @@ import com.baosystems.icrc.psm.services.OpenIdProvider
 import com.baosystems.icrc.psm.services.UserManager
 import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
 import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import org.dhis2.android.rtsm.ui.base.BaseViewModel
+import com.baosystems.icrc.psm.ui.base.BaseViewModel
 import com.baosystems.icrc.psm.utils.Sdk
 import com.baosystems.icrc.psm.utils.isConfigComplete
 import dagger.hilt.android.lifecycle.HiltViewModel

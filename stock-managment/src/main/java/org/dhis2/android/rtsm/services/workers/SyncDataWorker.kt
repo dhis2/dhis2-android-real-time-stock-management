@@ -5,20 +5,20 @@ import androidx.hilt.work.HiltWorker
 import androidx.work.Data
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.commons.Constants.SYNC_DATA_CHANNEL_NAME
-import com.baosystems.icrc.psm.commons.Constants.SYNC_DATA_NOTIFICATION_CHANNEL
-import com.baosystems.icrc.psm.commons.Constants.SYNC_DATA_NOTIFICATION_ID
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.SyncResult
-import com.baosystems.icrc.psm.services.SyncManager
-import com.baosystems.icrc.psm.services.preferences.PreferenceProvider
-import com.baosystems.icrc.psm.utils.DateUtils
-import com.baosystems.icrc.psm.utils.NotificationHelper
-import com.baosystems.icrc.psm.utils.Sdk
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.commons.Constants.SYNC_DATA_CHANNEL_NAME
+import org.dhis2.android.rtsm.commons.Constants.SYNC_DATA_NOTIFICATION_CHANNEL
+import org.dhis2.android.rtsm.commons.Constants.SYNC_DATA_NOTIFICATION_ID
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.SyncResult
+import org.dhis2.android.rtsm.services.SyncManager
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.utils.DateUtils
+import org.dhis2.android.rtsm.utils.NotificationHelper
+import org.dhis2.android.rtsm.utils.Sdk
 import java.time.LocalDateTime
 
 @HiltWorker

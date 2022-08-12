@@ -2,22 +2,17 @@ package org.dhis2.android.rtsm.services
 
 import androidx.paging.DataSource
 import androidx.paging.LivePagedListBuilder
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.models.IdentifiableModel
-import com.baosystems.icrc.psm.data.models.SearchParametersModel
-import com.baosystems.icrc.psm.data.models.SearchResult
-import com.baosystems.icrc.psm.data.models.StockEntry
-import com.baosystems.icrc.psm.data.models.StockItem
-import com.baosystems.icrc.psm.data.models.Transaction
-import com.baosystems.icrc.psm.services.rules.RuleValidationHelper
-import com.baosystems.icrc.psm.services.scheduler.BaseSchedulerProvider
-import com.baosystems.icrc.psm.utils.AttributeHelper
-import com.baosystems.icrc.psm.utils.ConfigUtils.getTransactionDataElement
-import com.baosystems.icrc.psm.utils.toDate
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
 import org.apache.commons.lang3.math.NumberUtils
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.models.*
+import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.utils.AttributeHelper
+import org.dhis2.android.rtsm.utils.ConfigUtils.getTransactionDataElement
+import org.dhis2.android.rtsm.utils.toDate
 import org.hisp.dhis.android.core.D2
 import org.hisp.dhis.android.core.arch.repositories.scope.RepositoryScope
 import org.hisp.dhis.android.core.enrollment.Enrollment
@@ -29,8 +24,7 @@ import org.hisp.dhis.android.core.trackedentity.TrackedEntityInstance
 import org.hisp.dhis.rules.models.RuleActionAssign
 import org.hisp.dhis.rules.models.RuleEffect
 import timber.log.Timber
-import java.util.Collections
-import java.util.Date
+import java.util.*
 import javax.inject.Inject
 
 class StockManagerImpl @Inject constructor(

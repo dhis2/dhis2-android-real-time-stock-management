@@ -2,7 +2,7 @@ package org.dhis2.android.rtsm.services
 
 import androidx.lifecycle.LiveData
 import androidx.work.WorkInfo
-import com.baosystems.icrc.psm.data.WorkItem
+import org.dhis2.android.rtsm.data.WorkItem
 
 interface WorkManagerController {
     fun sync(workName: String, metadataTag: String, dataTag: String)

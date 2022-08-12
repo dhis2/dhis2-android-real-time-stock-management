@@ -14,7 +14,8 @@ import androidx.lifecycle.ViewModelProvider;
 import com.baosystems.icrc.psm.R;
 import com.baosystems.icrc.psm.data.AppConfig;
 import com.baosystems.icrc.psm.databinding.ActivitySplashBinding;
-import org.dhis2.android.rtsm.ui.base.BaseActivity;
+
+import com.baosystems.icrc.psm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.home.HomeActivity;
 import com.baosystems.icrc.psm.ui.login.LoginActivity;
 import com.baosystems.icrc.psm.ui.sync.SyncActivity;

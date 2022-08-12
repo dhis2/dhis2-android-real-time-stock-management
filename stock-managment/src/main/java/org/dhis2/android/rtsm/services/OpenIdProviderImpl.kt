@@ -1,9 +1,9 @@
 package org.dhis2.android.rtsm.services
 
 import android.content.Context
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.data.models.OpenIDAuthConfigModel
 import com.google.gson.Gson
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.data.models.OpenIDAuthConfigModel
 import org.hisp.dhis.android.core.user.openid.OpenIDConnectConfig
 import java.io.BufferedReader
 import java.io.InputStreamReader

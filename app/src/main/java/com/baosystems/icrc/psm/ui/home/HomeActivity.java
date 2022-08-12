@@ -29,16 +29,13 @@ import com.baosystems.icrc.psm.data.OperationState;
 import com.baosystems.icrc.psm.data.TransactionType;
 import com.baosystems.icrc.psm.data.persistence.UserActivity;
 import com.baosystems.icrc.psm.databinding.ActivityHomeBinding;
-import org.dhis2.android.rtsm.ui.home.RecentActivityAdapter;
-import org.dhis2.android.rtsm.ui.base.BaseActivity;
+import com.baosystems.icrc.psm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.base.GenericListAdapter;
 import com.baosystems.icrc.psm.ui.managestock.ManageStockActivity;
 import com.baosystems.icrc.psm.utils.DateUtils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.datepicker.MaterialDatePicker;
 
-import org.dhis2.android.rtsm.ui.home.HomeViewModel;
-import org.dhis2.android.rtsm.ui.home.RecentActivityItemDividerDecoration;
 import org.hisp.dhis.android.core.option.Option;
 import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
 
@@ -57,14 +54,14 @@ public class HomeActivity extends BaseActivity {
     private AutoCompleteTextView distributedToTextView;
     private RecyclerView recentActivitiesRecyclerView;
 
-    private org.dhis2.android.rtsm.ui.home.HomeViewModel viewModel;
+    private HomeViewModel viewModel;
     private RecentActivityAdapter recentActivityAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        viewModel = (org.dhis2.android.rtsm.ui.home.HomeViewModel) getViewModel();
+        viewModel = (HomeViewModel) getViewModel();
 
         binding = (ActivityHomeBinding) getViewBinding();
         binding.setLifecycleOwner(this);

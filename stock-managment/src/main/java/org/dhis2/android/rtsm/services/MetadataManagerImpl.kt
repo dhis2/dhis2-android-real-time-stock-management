@@ -1,7 +1,7 @@
 package org.dhis2.android.rtsm.services
 
-import com.baosystems.icrc.psm.exceptions.InitializationException
 import io.reactivex.Single
+import org.dhis2.android.rtsm.exceptions.InitializationException
 import org.hisp.dhis.android.core.D2
 import org.hisp.dhis.android.core.arch.repositories.scope.RepositoryScope
 import org.hisp.dhis.android.core.option.Option

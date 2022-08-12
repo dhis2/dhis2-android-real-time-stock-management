@@ -3,7 +3,7 @@ package org.dhis2.android.rtsm.services.preferences
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceDataStore
-import com.baosystems.icrc.psm.commons.Constants
+import org.dhis2.android.rtsm.commons.Constants
 
 class PreferenceProviderImpl(context: Context): PreferenceProvider {
     private val sharedPreferences: SharedPreferences = context.getSharedPreferences(

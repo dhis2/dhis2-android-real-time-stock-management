@@ -31,17 +31,16 @@ import com.baosystems.icrc.psm.data.TransactionType;
 import com.baosystems.icrc.psm.data.models.StockItem;
 import com.baosystems.icrc.psm.data.models.Transaction;
 import com.baosystems.icrc.psm.databinding.ActivityManageStockBinding;
-import org.dhis2.android.rtsm.ui.base.BaseActivity;
-import org.dhis2.android.rtsm.ui.base.BaseViewModel;
-import org.dhis2.android.rtsm.ui.base.ItemWatcher;
+
+import com.baosystems.icrc.psm.ui.base.BaseActivity;
+import com.baosystems.icrc.psm.ui.base.BaseViewModel;
+import com.baosystems.icrc.psm.ui.base.ItemWatcher;
 import com.baosystems.icrc.psm.ui.reviewstock.ReviewStockActivity;
 import com.baosystems.icrc.psm.utils.ActivityManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
-import org.dhis2.android.rtsm.ui.managestock.ManageStockAdapter;
-import org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel;
 import org.hisp.dhis.rules.models.RuleActionAssign;
 import org.hisp.dhis.rules.models.RuleEffect;
 import org.jetbrains.annotations.NotNull;
@@ -54,14 +53,14 @@ import io.reactivex.disposables.CompositeDisposable;
 @AndroidEntryPoint
 public class ManageStockActivity extends BaseActivity {
     private ActivityManageStockBinding binding;
-    private org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel viewModel;
-    private org.dhis2.android.rtsm.ui.managestock.ManageStockAdapter adapter;
+    private ManageStockViewModel viewModel;
+    private ManageStockAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        viewModel = (org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel) getViewModel();
+        viewModel = (ManageStockViewModel) getViewModel();
 
         binding = (ActivityManageStockBinding) getViewBinding();
         binding.setViewModel(viewModel);
@@ -267,7 +266,7 @@ public class ManageStockActivity extends BaseActivity {
     @org.jetbrains.annotations.Nullable
     @Override
     public Integer getCustomTheme(@NotNull ViewModel viewModel) {
-        switch (((org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel) viewModel).getTransaction().getTransactionType()) {
+        switch (((ManageStockViewModel) viewModel).getTransaction().getTransactionType()) {
             case DISTRIBUTION:
                 return R.style.Theme_App_Distribution;
             case DISCARD:

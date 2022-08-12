@@ -2,7 +2,7 @@ package org.dhis2.android.rtsm.services
 
 import androidx.lifecycle.LiveData
 import androidx.work.WorkInfo
-import com.baosystems.icrc.psm.data.SyncResult
+import org.dhis2.android.rtsm.data.SyncResult
 import org.hisp.dhis.android.core.settings.SynchronizationSettings
 
 interface SyncManager {
