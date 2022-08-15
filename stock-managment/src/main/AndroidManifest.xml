@@ -18,6 +18,4 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
     </application>
-
-<!--    tools:replace=".RTSMApp"-->
 </manifest>

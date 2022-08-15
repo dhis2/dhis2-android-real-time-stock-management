@@ -49,6 +49,7 @@ import io.reactivex.disposables.CompositeDisposable;
 
 @AndroidEntryPoint
 public class ReviewStockActivity extends BaseActivity {
+
     private ReviewStockViewModel viewModel;
     private ActivityReviewStockBinding binding;
     private ReviewStockAdapter adapter;

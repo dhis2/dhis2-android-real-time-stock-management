@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.dhis2.android.rtsm" > <!-- tools:replace=".RTSMApp" -->
+    package="org.dhis2.android.rtsm" >
+
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="30" />

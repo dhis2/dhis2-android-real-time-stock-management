@@ -71,4 +71,6 @@ open class BaseViewModel @Inject constructor(
     fun isVoiceInputEnabled(prefKey: String) = preferenceProvider.getBoolean(prefKey, false)
 
     private fun getAppVersion() = "v" + BuildConfig.VERSION_NAME
+
+
 }
