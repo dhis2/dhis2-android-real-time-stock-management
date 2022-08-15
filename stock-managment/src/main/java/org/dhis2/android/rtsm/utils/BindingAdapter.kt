@@ -4,8 +4,8 @@ import android.view.View
 import android.widget.AutoCompleteTextView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import com.baosystems.icrc.psm.R
 import com.google.android.material.button.MaterialButton
+import org.dhis2.android.rtsm.R
 import java.time.LocalDateTime
 
 @BindingAdapter("date")

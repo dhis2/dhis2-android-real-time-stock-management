@@ -1,16 +1,21 @@
 package org.dhis2.android.rtsm.utils
 
 import android.content.res.Resources
-import com.baosystems.icrc.psm.R
-import com.baosystems.icrc.psm.commons.Constants
-import com.baosystems.icrc.psm.data.AppConfig
-import com.baosystems.icrc.psm.data.TransactionType
-import com.baosystems.icrc.psm.exceptions.InitializationException
+import org.dhis2.android.rtsm.R
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.exceptions.InitializationException
+//import com.baosystems.icrc.psm.R
+//import com.baosystems.icrc.psm.commons.Constants
+//import com.baosystems.icrc.psm.data.AppConfig
+//import com.baosystems.icrc.psm.data.TransactionType
+//import com.baosystems.icrc.psm.exceptions.InitializationException
 import java.io.IOException
 import java.util.*
 
 object ConfigUtils {
-    private const val CONFIG_RESOURCE = R.raw.config
+    private val CONFIG_RESOURCE = R.raw.config
 
     @JvmStatic
     fun getAppConfig(res: Resources): AppConfig {

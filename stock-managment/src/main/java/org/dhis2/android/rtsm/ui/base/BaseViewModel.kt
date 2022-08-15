@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.Disposable
 import org.dhis2.android.rtsm.BuildConfig
+//import org.dhis2.android.rtsm.BuildConfig
 import org.dhis2.android.rtsm.commons.Constants
 import org.dhis2.android.rtsm.data.AppConfig
 import org.dhis2.android.rtsm.data.RowAction

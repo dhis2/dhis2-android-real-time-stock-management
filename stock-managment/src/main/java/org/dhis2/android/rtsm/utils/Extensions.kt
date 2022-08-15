@@ -1,12 +1,12 @@
 package org.dhis2.android.rtsm.utils
 
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_12H
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_1H
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_30M
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_6H
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_DAILY
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_MANUAL
-import com.baosystems.icrc.psm.commons.Constants.PERIOD_WEEKLY
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_12H
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_1H
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_30M
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_6H
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_DAILY
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_MANUAL
+import org.dhis2.android.rtsm.commons.Constants.PERIOD_WEEKLY
 import org.hisp.dhis.android.core.settings.DataSyncPeriod
 import org.hisp.dhis.android.core.settings.MetadataSyncPeriod
 import org.hisp.dhis.android.core.user.openid.OpenIDConnectConfig

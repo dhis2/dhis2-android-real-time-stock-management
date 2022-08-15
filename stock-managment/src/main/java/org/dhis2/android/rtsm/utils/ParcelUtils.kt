@@ -1,6 +1,6 @@
 package org.dhis2.android.rtsm.utils
 
-import com.baosystems.icrc.psm.data.models.IdentifiableModel
+import org.dhis2.android.rtsm.data.models.IdentifiableModel
 import org.hisp.dhis.android.core.option.Option
 import org.hisp.dhis.android.core.organisationunit.OrganisationUnit
 

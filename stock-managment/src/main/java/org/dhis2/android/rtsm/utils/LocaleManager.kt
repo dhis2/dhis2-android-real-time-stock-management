@@ -5,7 +5,7 @@ import android.content.res.Configuration
 import android.os.Build
 import android.os.LocaleList
 import androidx.preference.PreferenceManager
-import com.baosystems.icrc.psm.R
+import org.dhis2.android.rtsm.R
 import java.util.*
 
 class LocaleManager {

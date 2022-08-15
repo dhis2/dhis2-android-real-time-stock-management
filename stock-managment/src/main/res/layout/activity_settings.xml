@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.baosystems.icrc.psm.ui.settings.SettingsViewModel" />
+            type="org.dhis2.android.rtsm.ui.settings.SettingsViewModel" />
     </data>
 
     <RelativeLayout
