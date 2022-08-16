@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-managem
 	android:name
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:8:22-68
 application
-ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:10:5-20:19
+ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:10:5-21:19
 	android:supportsRtl
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:18:9-35
 	android:label
@@ -39,6 +39,8 @@ ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-managem
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:19:9-41
+	tools:replace
+		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:20:9-37
 	android:fullBackupOnly
 		ADDED from C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:13:9-38
 	android:name

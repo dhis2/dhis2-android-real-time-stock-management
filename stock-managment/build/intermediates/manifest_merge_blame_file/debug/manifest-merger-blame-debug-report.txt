@@ -20,7 +20,7 @@
 12-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:8:22-68
 13
 14    <application
-14-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:10:5-20:19
+14-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:10:5-21:19
 15        android:name="org.dhis2.android.rtsm.RTSMApp"
 15-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:11:9-32
 16        android:allowBackup="true"
@@ -37,8 +37,10 @@
 21-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:17:9-54
 22        android:supportsRtl="true"
 22-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:18:9-35
-23        android:theme="@style/Theme.App" >
+23        android:theme="@style/Theme.App"
 23-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:19:9-41
-24    </application>
-25
-26</manifest>
+24        tools:replace="android:name" >
+24-->C:\Users\migue\Documents\GitHub\dhis2-android-real-time-stock-management\stock-managment\src\main\AndroidManifest.xml:20:9-37
+25    </application>
+26
+27</manifest>
