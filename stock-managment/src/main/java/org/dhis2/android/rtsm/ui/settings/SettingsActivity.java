@@ -25,17 +25,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.work.WorkInfo;
-
-//import com.baosystems.icrc.psm.R;
-//import com.baosystems.icrc.psm.data.OperationState;
-//import com.baosystems.icrc.psm.databinding.ActivitySettingsBinding;
-//
-//import org.dhis2.android.rtsm.ui.base.BaseActivity;
-//import com.baosystems.icrc.psm.ui.login.LoginActivity;
-//import com.baosystems.icrc.psm.ui.splashscreen.SplashActivity;
-//import com.baosystems.icrc.psm.utils.ActivityManager;
-//import com.baosystems.icrc.psm.utils.NetworkUtils;
-
 import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.OperationState;
 import org.dhis2.android.rtsm.databinding.ActivitySettingsBinding;

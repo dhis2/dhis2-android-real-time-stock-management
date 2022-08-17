@@ -11,6 +11,21 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.plugins.RxJavaPlugins
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.schedulers.TestScheduler
+import org.dhis2.android.rtsm.commons.Constants
+import org.dhis2.android.rtsm.data.*
+import org.dhis2.android.rtsm.data.persistence.UserActivity
+import org.dhis2.android.rtsm.data.persistence.UserActivityDao
+import org.dhis2.android.rtsm.data.persistence.UserActivityRepository
+import org.dhis2.android.rtsm.exceptions.UserIntentParcelCreationException
+import org.dhis2.android.rtsm.services.MetadataManager
+import org.dhis2.android.rtsm.services.UserManager
+import org.dhis2.android.rtsm.services.UserManagerImpl
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.services.scheduler.TestSchedulerProvider
+import org.dhis2.android.rtsm.services.scheduler.TrampolineSchedulerProvider
+import org.dhis2.android.rtsm.utils.ParcelUtils
+import org.dhis2.android.rtsm.utils.humanReadableDate
 import org.hisp.dhis.android.core.D2
 import org.hisp.dhis.android.core.option.Option
 import org.hisp.dhis.android.core.organisationunit.OrganisationUnit
@@ -31,6 +46,8 @@ import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 import java.time.LocalDateTime
 import java.time.ZoneId
+import org.dhis2.android.rtsm.R
+
 
 @RunWith(MockitoJUnitRunner::class)
 class HomeViewModelUnitTest {

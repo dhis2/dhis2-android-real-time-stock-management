@@ -1,7 +1,7 @@
 package org.dhis2.android.rtsm.utils
 
-import com.baosystems.icrc.psm.exceptions.InitializationException
 import junit.framework.TestCase.assertNotNull
+import org.dhis2.android.rtsm.exceptions.InitializationException
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
