@@ -12,7 +12,7 @@ import org.dhis2.android.rtsm.commons.Constants
 import org.dhis2.android.rtsm.data.SpeechRecognitionState
 import org.dhis2.android.rtsm.utils.Utils
 import timber.log.Timber
-import java.util.*
+import java.util.Locale
 
 class SpeechRecognitionManagerImpl(
     private val context: Context

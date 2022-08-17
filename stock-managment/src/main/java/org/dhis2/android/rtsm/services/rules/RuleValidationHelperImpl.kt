@@ -7,7 +7,12 @@ import org.dhis2.android.rtsm.data.AppConfig
 import org.dhis2.android.rtsm.data.TransactionType
 import org.dhis2.android.rtsm.data.models.StockEntry
 import org.dhis2.android.rtsm.data.models.Transaction
-import org.dhis2.android.rtsm.utils.*
+import org.dhis2.android.rtsm.utils.RuleEngineHelper
+import org.dhis2.android.rtsm.utils.ConfigUtils
+import org.dhis2.android.rtsm.utils.printRuleEffects
+import org.dhis2.android.rtsm.utils.toRuleDataValue
+import org.dhis2.android.rtsm.utils.toRuleVariableList
+import org.dhis2.android.rtsm.utils.toRuleList
 import org.hisp.dhis.android.core.D2
 import org.hisp.dhis.android.core.arch.repositories.scope.RepositoryScope
 import org.hisp.dhis.android.core.enrollment.Enrollment
@@ -15,9 +20,15 @@ import org.hisp.dhis.android.core.enrollment.EnrollmentStatus
 import org.hisp.dhis.android.core.event.EventStatus
 import org.hisp.dhis.android.core.program.ProgramStage
 import org.hisp.dhis.rules.RuleEngine
-import org.hisp.dhis.rules.models.*
+import org.hisp.dhis.rules.models.RuleActionAssign
+import org.hisp.dhis.rules.models.RuleDataValue
+import org.hisp.dhis.rules.models.RuleEffect
+import org.hisp.dhis.rules.models.RuleEvent
+import org.hisp.dhis.rules.models.RuleVariable
 import timber.log.Timber
-import java.util.*
+import java.util.Date
+import java.util.Objects
+import java.util.UUID
 import javax.inject.Inject
 
 class RuleValidationHelperImpl @Inject constructor(

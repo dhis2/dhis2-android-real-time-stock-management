@@ -24,7 +24,8 @@ import org.hisp.dhis.android.core.trackedentity.TrackedEntityInstance
 import org.hisp.dhis.rules.models.RuleActionAssign
 import org.hisp.dhis.rules.models.RuleEffect
 import timber.log.Timber
-import java.util.*
+import java.util.Date
+import java.util.Collections
 import javax.inject.Inject
 
 class StockManagerImpl @Inject constructor(

@@ -1,7 +1,14 @@
 package org.dhis2.android.rtsm.services
 
 import androidx.lifecycle.LiveData
-import androidx.work.*
+import androidx.work.Constraints
+import androidx.work.ExistingWorkPolicy
+import androidx.work.NetworkType
+import androidx.work.OneTimeWorkRequest
+import androidx.work.PeriodicWorkRequest
+import androidx.work.WorkInfo
+import androidx.work.WorkManager
+
 import org.dhis2.android.rtsm.data.WorkItem
 import org.dhis2.android.rtsm.data.WorkType
 import org.dhis2.android.rtsm.services.workers.SyncDataWorker

@@ -27,7 +27,8 @@ import org.dhis2.android.rtsm.ui.base.ItemWatcher
 import org.dhis2.android.rtsm.ui.base.SpeechRecognitionAwareViewModel
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
-import java.util.*
+import java.util.Date
+import java.util.Collections
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
