@@ -30,17 +30,6 @@
         </intent>
     </queries>
 
-    <!-- <application -->
-    <!-- android:allowBackup="true" -->
-    <!-- android:fullBackupOnly="true" -->
-    <!-- android:hardwareAccelerated="true" -->
-    <!-- android:icon="@mipmap/ic_launcher" -->
-    <!-- android:label="@string/app_name" -->
-    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
-    <!-- android:supportsRtl="true" -->
-    <!-- android:theme="@style/Theme.App" -->
-    <!-- tools:replace="android:name"> -->
-    <!-- </application> -->
     <application>
         <activity
             android:name="org.dhis2.android.rtsm.ui.settings.SettingsActivity"
@@ -54,13 +43,13 @@
             android:name="org.dhis2.android.rtsm.ui.reviewstock.ReviewStockActivity"
             android:parentActivityName="org.dhis2.android.rtsm.ui.managestock.ManageStockActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <!-- <activity -->
-        <!-- android:name="org.dhis2.android.rtsm.ui.scanner.ScannerActivity" -->
-        <!-- android:exported="false" -->
-        <!-- android:screenOrientation="fullSensor" -->
-        <!-- android:stateNotNeeded="true" -->
-        <!-- android:theme="@style/Theme.BarcodeCapture" -->
-        <!-- android:windowSoftInputMode="stateAlwaysHidden" /> -->
+        <activity
+            android:name="org.dhis2.android.rtsm.ui.scanner.ScannerActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.BarcodeCapture"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>
