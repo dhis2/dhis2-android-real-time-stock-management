@@ -8,7 +8,7 @@ import org.dhis2.android.rtsm.data.TransactionType
 import org.dhis2.android.rtsm.exceptions.InitializationException
 
 import java.io.IOException
-import java.util.*
+import java.util.Properties
 
 object ConfigUtils {
     private val CONFIG_RESOURCE = R.raw.config
@@ -30,7 +30,7 @@ object ConfigUtils {
         )
     }
 
-    fun getConfigValue(configProps: Properties,  key: String): String {
+    fun getConfigValue(configProps: Properties, key: String): String {
         if (key.isEmpty()) throw InitializationException("Configuration key '$key' cannot be empty")
 
         return configProps.getProperty(key)

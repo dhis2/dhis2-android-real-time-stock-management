@@ -6,7 +6,7 @@ import android.os.Build
 import android.os.LocaleList
 import androidx.preference.PreferenceManager
 import org.dhis2.android.rtsm.R
-import java.util.*
+import java.util.Locale
 
 class LocaleManager {
     companion object {
