@@ -70,9 +70,6 @@ android {
         viewBinding true
         dataBinding true
     }
-//    hilt {
-//        enableAggregatingTask = true
-//    }
 
 }
 
@@ -143,6 +140,7 @@ dependencies {
 
     testImplementation "junit:junit:$versions.junit"
     testImplementation "org.mockito.kotlin:mockito-kotlin:$versions.mockito_kotlin"
+    testImplementation "org.mockito:mockito-inline:$versions.mockito_inline"
     testImplementation "androidx.arch.core:core-testing:$versions.android_core_testing"
     testImplementation "com.github.javafaker:javafaker:$versions.javafaker"
 
