@@ -1,14 +1,15 @@
 package org.dhis2.android.rtsm.di
 
-import org.dhis2.android.rtsm.services.*
-import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
-import org.dhis2.android.rtsm.services.rules.RuleValidationHelperImpl
-import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
-import org.dhis2.android.rtsm.services.scheduler.SchedulerProviderImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
+import org.dhis2.android.rtsm.services.*
+
+import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
+import org.dhis2.android.rtsm.services.rules.RuleValidationHelperImpl
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.services.scheduler.SchedulerProviderImpl
 
 @Module
 @InstallIn(ViewModelComponent::class)

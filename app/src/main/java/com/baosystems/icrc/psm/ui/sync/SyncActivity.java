@@ -30,8 +30,6 @@ import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import org.dhis2.android.rtsm.ui.home.HomeActivity;
 import org.dhis2.android.rtsm.utils.ActivityManager;
 import org.dhis2.android.rtsm.utils.ConfigUtils;
-//import com.baosystems.icrc.psm.utils.ActivityManager;
-//import com.baosystems.icrc.psm.utils.ConfigUtils;
 
 import dagger.hilt.android.AndroidEntryPoint;
 import io.reactivex.disposables.CompositeDisposable;

@@ -5,8 +5,6 @@ import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
-import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import org.dhis2.android.rtsm.commons.Constants.CONFIG_ITEM_CODE
@@ -16,6 +14,8 @@ import org.dhis2.android.rtsm.commons.Constants.CONFIG_STOCK_ON_HAND
 import org.dhis2.android.rtsm.commons.Constants.LAST_DATA_SYNC_STATUS
 import org.dhis2.android.rtsm.commons.Constants.LAST_METADATA_SYNC_STATUS
 import org.dhis2.android.rtsm.commons.Constants.SERVER_URL
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
 import org.dhis2.android.rtsm.utils.ConfigUtils
 import org.dhis2.android.rtsm.utils.ConfigUtils.loadConfigFile
 import org.dhis2.android.rtsm.utils.Sdk

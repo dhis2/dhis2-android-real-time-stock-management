@@ -5,17 +5,16 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.baosystems.icrc.psm.BuildConfig
 import com.baosystems.icrc.psm.R
-
-import org.dhis2.android.rtsm.services.OpenIdProvider
-import org.dhis2.android.rtsm.services.UserManager
-import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
-import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
-import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.Completable
 import io.reactivex.disposables.CompositeDisposable
 import org.dhis2.android.rtsm.commons.Constants
 import org.dhis2.android.rtsm.data.OperationState
+import org.dhis2.android.rtsm.services.OpenIdProvider
+import org.dhis2.android.rtsm.services.UserManager
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.ui.base.BaseViewModel
 import org.dhis2.android.rtsm.utils.Sdk
 import org.dhis2.android.rtsm.utils.isConfigComplete
 import org.hisp.dhis.android.core.user.User

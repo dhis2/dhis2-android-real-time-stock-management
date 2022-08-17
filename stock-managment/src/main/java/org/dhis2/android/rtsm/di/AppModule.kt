@@ -2,10 +2,6 @@ package org.dhis2.android.rtsm.di
 
 import android.content.Context
 import androidx.work.WorkManager
-import org.dhis2.android.rtsm.services.*
-import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
-import org.dhis2.android.rtsm.services.preferences.PreferenceProviderImpl
-import org.dhis2.android.rtsm.services.rules.ExpressionEvaluatorImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,6 +9,10 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import org.apache.commons.jexl2.JexlEngine
 import org.dhis2.android.rtsm.data.AppConfig
+import org.dhis2.android.rtsm.services.*
+import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
+import org.dhis2.android.rtsm.services.preferences.PreferenceProviderImpl
+import org.dhis2.android.rtsm.services.rules.ExpressionEvaluatorImpl
 import org.dhis2.android.rtsm.utils.ConfigUtils
 import org.dhis2.android.rtsm.utils.Sdk
 import org.hisp.dhis.android.core.D2

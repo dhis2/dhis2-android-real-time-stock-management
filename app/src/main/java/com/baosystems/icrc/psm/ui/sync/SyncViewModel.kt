@@ -3,8 +3,8 @@ package com.baosystems.icrc.psm.ui.sync
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.work.WorkInfo
-import org.dhis2.android.rtsm.services.SyncManager
 import dagger.hilt.android.lifecycle.HiltViewModel
+import org.dhis2.android.rtsm.services.SyncManager
 import javax.inject.Inject
 
 @HiltViewModel
