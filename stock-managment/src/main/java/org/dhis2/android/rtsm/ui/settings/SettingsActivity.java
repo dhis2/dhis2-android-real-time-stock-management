@@ -1,9 +1,5 @@
 package org.dhis2.android.rtsm.ui.settings;
 
-//import static com.baosystems.icrc.psm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE;
-//import static com.baosystems.icrc.psm.commons.Constants.INSTANT_DATA_SYNC;
-//import static com.baosystems.icrc.psm.commons.Constants.INTENT_EXTRA_MESSAGE;
-
 import static org.dhis2.android.rtsm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE;
 import static org.dhis2.android.rtsm.commons.Constants.INSTANT_DATA_SYNC;
 import static org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_MESSAGE;
