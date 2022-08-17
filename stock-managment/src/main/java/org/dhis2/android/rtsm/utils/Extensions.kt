@@ -12,7 +12,8 @@ import org.hisp.dhis.android.core.settings.MetadataSyncPeriod
 import org.hisp.dhis.android.core.user.openid.OpenIDConnectConfig
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
-import java.util.*
+import java.util.Date
+import java.util.Locale
 
 fun LocalDateTime.humanReadableDateTime(): String = this.format(DateUtils.getDateTimePattern())
 
