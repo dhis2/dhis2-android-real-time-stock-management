@@ -19,7 +19,8 @@
 <!--        tools:replace="android:name">-->
 <!--    </application>-->
 
-    <application>
+    <application
+        android:supportsRtl="true">
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:theme="@style/Theme.App" />
