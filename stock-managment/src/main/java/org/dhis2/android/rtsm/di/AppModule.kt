@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.di
+package org.dhis2.android.rtsm.di
 
 import android.content.Context
 import androidx.work.WorkManager

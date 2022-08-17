@@ -1,4 +1,4 @@
-package com.baosystems.icrc.psm.di
+package org.dhis2.android.rtsm.di
 
 import org.dhis2.android.rtsm.services.*
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
