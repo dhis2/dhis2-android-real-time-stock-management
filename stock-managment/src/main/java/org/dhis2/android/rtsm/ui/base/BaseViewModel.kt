@@ -1,6 +1,6 @@
 package org.dhis2.android.rtsm.ui.base
 
-//import org.dhis2.android.rtsm.BuildConfig
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
