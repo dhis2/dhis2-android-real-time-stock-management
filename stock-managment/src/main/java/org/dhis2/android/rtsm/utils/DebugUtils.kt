@@ -1,6 +1,12 @@
 package org.dhis2.android.rtsm.utils
 
-import org.hisp.dhis.rules.models.*
+import org.hisp.dhis.rules.models.Rule
+import org.hisp.dhis.rules.models.RuleVariable
+import org.hisp.dhis.rules.models.RuleEvent
+import org.hisp.dhis.rules.models.RuleActionAssign
+import org.hisp.dhis.rules.models.RuleVariableCurrentEvent
+import org.hisp.dhis.rules.models.RuleEffect
+import org.hisp.dhis.rules.models.RuleDataValue
 import timber.log.Timber
 
 const val MAX_LEN = 120
