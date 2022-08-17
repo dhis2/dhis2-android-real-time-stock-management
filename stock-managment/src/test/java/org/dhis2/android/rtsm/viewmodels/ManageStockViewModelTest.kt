@@ -4,8 +4,6 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import androidx.lifecycle.SavedStateHandle
 import androidx.paging.PagedList
-import org.dhis2.android.rtsm.ui.base.ItemWatcher
-import org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel
 import com.github.javafaker.Faker
 import io.reactivex.disposables.CompositeDisposable
 import org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_APP_CONFIG
@@ -24,12 +22,12 @@ import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
 import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
 import org.dhis2.android.rtsm.services.scheduler.TrampolineSchedulerProvider
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.managestock.ManageStockViewModel
 import org.dhis2.android.rtsm.utils.ParcelUtils
 import org.hisp.dhis.android.core.attribute.AttributeValue
 import org.hisp.dhis.rules.models.RuleEffect
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertNotNull
-import org.junit.Assert.assertNull
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

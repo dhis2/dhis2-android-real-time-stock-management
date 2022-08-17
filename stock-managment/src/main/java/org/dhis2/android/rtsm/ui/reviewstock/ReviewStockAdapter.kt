@@ -12,9 +12,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.dhis2.android.rtsm.ui.base.ItemWatcher
-import org.dhis2.android.rtsm.ui.base.SpeechController
-import org.dhis2.android.rtsm.ui.base.TextInputDelegate
 import com.google.android.material.textfield.TextInputLayout
 import org.dhis2.android.rtsm.R
 import org.dhis2.android.rtsm.commons.Constants
@@ -22,6 +19,9 @@ import org.dhis2.android.rtsm.data.AppConfig
 import org.dhis2.android.rtsm.data.TransactionType
 import org.dhis2.android.rtsm.data.models.StockEntry
 import org.dhis2.android.rtsm.data.models.Transaction
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.SpeechController
+import org.dhis2.android.rtsm.ui.base.TextInputDelegate
 import org.dhis2.android.rtsm.utils.ActivityManager
 import org.dhis2.android.rtsm.utils.KeyboardUtils
 import org.jetbrains.annotations.NotNull

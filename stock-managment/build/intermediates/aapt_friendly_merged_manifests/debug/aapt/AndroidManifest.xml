@@ -30,7 +30,7 @@
         </intent>
     </queries>
 
-    <application>
+    <application android:supportsRtl="true" >
         <activity
             android:name="org.dhis2.android.rtsm.ui.settings.SettingsActivity"
             android:theme="@style/Theme.App" />

@@ -2,7 +2,6 @@ package org.dhis2.android.rtsm.ui.settings;
 
 import static org.dhis2.android.rtsm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE;
 import static org.dhis2.android.rtsm.commons.Constants.INSTANT_DATA_SYNC;
-import static org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_MESSAGE;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +11,6 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
@@ -21,11 +19,11 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.work.WorkInfo;
+
 import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.OperationState;
 import org.dhis2.android.rtsm.databinding.ActivitySettingsBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
-import org.dhis2.android.rtsm.ui.settings.SettingsViewModel;
 import org.dhis2.android.rtsm.utils.ActivityManager;
 import org.dhis2.android.rtsm.utils.NetworkUtils;
 

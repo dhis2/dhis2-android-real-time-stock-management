@@ -1,7 +1,6 @@
 package org.dhis2.android.rtsm.utils
 
 import android.content.Context
-import okhttp3.Interceptor
 import org.dhis2.android.rtsm.BuildConfig
 import org.dhis2.android.rtsm.R
 import org.hisp.dhis.android.core.D2

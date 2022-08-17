@@ -2,13 +2,10 @@ package com.baosystems.icrc.psm.di
 
 import android.content.Context
 import androidx.work.WorkManager
-//import com.baosystems.icrc.psm.data.AppConfig
 import org.dhis2.android.rtsm.services.*
 import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
 import org.dhis2.android.rtsm.services.preferences.PreferenceProviderImpl
 import org.dhis2.android.rtsm.services.rules.ExpressionEvaluatorImpl
-//import com.baosystems.icrc.psm.utils.ConfigUtils
-//import com.baosystems.icrc.psm.utils.Sdk
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

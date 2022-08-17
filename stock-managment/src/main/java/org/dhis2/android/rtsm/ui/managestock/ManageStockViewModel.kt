@@ -5,8 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.Transformations
 import androidx.paging.PagedList
-import org.dhis2.android.rtsm.ui.base.ItemWatcher
-import org.dhis2.android.rtsm.ui.base.SpeechRecognitionAwareViewModel
 import com.jakewharton.rxrelay2.PublishRelay
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
@@ -25,10 +23,11 @@ import org.dhis2.android.rtsm.services.StockManager
 import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
 import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
+import org.dhis2.android.rtsm.ui.base.ItemWatcher
+import org.dhis2.android.rtsm.ui.base.SpeechRecognitionAwareViewModel
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
-import java.util.Collections
-import java.util.Date
+import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

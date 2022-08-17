@@ -1,11 +1,5 @@
 package com.baosystems.icrc.psm.ui.sync;
 
-//import static com.baosystems.icrc.psm.commons.Constants.INITIAL_SYNC;
-//import static com.baosystems.icrc.psm.commons.Constants.INSTANT_DATA_SYNC;
-//import static com.baosystems.icrc.psm.commons.Constants.INSTANT_METADATA_SYNC;
-//import static com.baosystems.icrc.psm.commons.Constants.SCREEN_TRANSITION_DELAY;
-//import static com.baosystems.icrc.psm.commons.Constants.WORKER_ERROR_MESSAGE_KEY;
-
 import static org.dhis2.android.rtsm.commons.Constants.INITIAL_SYNC;
 import static org.dhis2.android.rtsm.commons.Constants.INSTANT_DATA_SYNC;
 import static org.dhis2.android.rtsm.commons.Constants.INSTANT_METADATA_SYNC;
@@ -29,7 +23,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.work.WorkInfo;
 
 import com.baosystems.icrc.psm.R;
-//import com.baosystems.icrc.psm.data.AppConfig;
 import com.baosystems.icrc.psm.databinding.ActivitySyncBinding;
 
 import org.dhis2.android.rtsm.data.AppConfig;

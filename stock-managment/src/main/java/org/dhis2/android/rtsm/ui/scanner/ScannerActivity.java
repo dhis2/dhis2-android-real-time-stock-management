@@ -14,9 +14,8 @@ import androidx.databinding.DataBindingUtil;
 import com.journeyapps.barcodescanner.CaptureManager;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
-import org.dhis2.android.rtsm.databinding.ActivityScannerBinding;
-
 import org.dhis2.android.rtsm.R;
+import org.dhis2.android.rtsm.databinding.ActivityScannerBinding;
 
 public class ScannerActivity extends AppCompatActivity implements
         DecoratedBarcodeView.TorchListener, View.OnClickListener {

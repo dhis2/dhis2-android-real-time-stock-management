@@ -3,23 +3,12 @@ package org.dhis2.android.rtsm.services
 import com.google.common.collect.Lists
 import org.hisp.dhis.rules.RuleEngine
 import org.hisp.dhis.rules.RuleEngineContext
-import org.hisp.dhis.rules.models.Rule
-import org.hisp.dhis.rules.models.RuleAction
-import org.hisp.dhis.rules.models.RuleActionAssign
-import org.hisp.dhis.rules.models.RuleDataValue
-import org.hisp.dhis.rules.models.RuleEnrollment
-import org.hisp.dhis.rules.models.RuleEvent
-import org.hisp.dhis.rules.models.RuleValueType
-import org.hisp.dhis.rules.models.RuleVariable
-import org.hisp.dhis.rules.models.RuleVariableCurrentEvent
-import org.hisp.dhis.rules.models.RuleVariablePreviousEvent
-import org.hisp.dhis.rules.models.TriggerEnvironment
+import org.hisp.dhis.rules.models.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import java.util.Arrays
-import java.util.Date
+import java.util.*
 
 @RunWith(JUnit4::class)
 class ProgramRuleTests {

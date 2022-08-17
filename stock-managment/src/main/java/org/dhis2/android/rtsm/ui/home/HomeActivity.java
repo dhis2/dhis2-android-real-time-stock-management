@@ -24,6 +24,8 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.datepicker.MaterialDatePicker;
 
 import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.AppConfig;
@@ -32,17 +34,11 @@ import org.dhis2.android.rtsm.data.TransactionType;
 import org.dhis2.android.rtsm.data.persistence.UserActivity;
 import org.dhis2.android.rtsm.databinding.ActivityHomeBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.ui.base.GenericListAdapter;
 import org.dhis2.android.rtsm.ui.managestock.ManageStockActivity;
 import org.dhis2.android.rtsm.utils.DateUtils;
 import org.hisp.dhis.android.core.option.Option;
 import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
-
-import org.dhis2.android.rtsm.ui.base.GenericListAdapter;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.datepicker.MaterialDatePicker;
-
-//import org.hisp.dhis.android.core.option.Option;
-//import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
 
 import java.util.HashMap;
 import java.util.List;

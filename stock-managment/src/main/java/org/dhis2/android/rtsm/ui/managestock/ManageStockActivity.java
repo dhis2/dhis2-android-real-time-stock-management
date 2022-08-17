@@ -24,22 +24,20 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.journeyapps.barcodescanner.ScanContract;
+import com.journeyapps.barcodescanner.ScanOptions;
+
 import org.dhis2.android.rtsm.R;
 import org.dhis2.android.rtsm.data.AppConfig;
 import org.dhis2.android.rtsm.data.OperationState;
 import org.dhis2.android.rtsm.data.TransactionType;
 import org.dhis2.android.rtsm.data.models.StockItem;
 import org.dhis2.android.rtsm.data.models.Transaction;
+import org.dhis2.android.rtsm.databinding.ActivityManageStockBinding;
 import org.dhis2.android.rtsm.ui.base.BaseActivity;
 import org.dhis2.android.rtsm.ui.base.BaseViewModel;
 import org.dhis2.android.rtsm.ui.base.ItemWatcher;
-
-
-import com.google.android.material.textfield.TextInputEditText;
-import com.journeyapps.barcodescanner.ScanContract;
-import com.journeyapps.barcodescanner.ScanOptions;
-
-import org.dhis2.android.rtsm.databinding.ActivityManageStockBinding;
 import org.dhis2.android.rtsm.ui.reviewstock.ReviewStockActivity;
 import org.dhis2.android.rtsm.utils.ActivityManager;
 import org.hisp.dhis.rules.models.RuleActionAssign;
