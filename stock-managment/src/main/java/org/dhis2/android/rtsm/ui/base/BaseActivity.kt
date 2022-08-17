@@ -27,6 +27,7 @@ import org.dhis2.android.rtsm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE
 import org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_MESSAGE
 import org.dhis2.android.rtsm.data.SpeechRecognitionState
 import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.ui.settings.SettingsActivity
 import org.dhis2.android.rtsm.utils.ActivityManager.Companion.checkPermission
 import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showErrorMessage
 import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showInfoMessage
@@ -180,7 +181,7 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.action_settings -> {
-                //startActivity(SettingsActivity.getSettingsActivityIntent(this))
+                startActivity(SettingsActivity.getSettingsActivityIntent(this))
                 return true
             }
             android.R.id.home -> {
