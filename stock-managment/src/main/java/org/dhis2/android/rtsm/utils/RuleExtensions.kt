@@ -29,11 +29,32 @@ import org.hisp.dhis.android.core.common.ValueType
 import org.hisp.dhis.android.core.dataelement.DataElementCollectionRepository
 import org.hisp.dhis.android.core.event.Event
 import org.hisp.dhis.android.core.option.OptionCollectionRepository
-import org.hisp.dhis.android.core.program.*
+import org.hisp.dhis.android.core.program.ProgramRule
+import org.hisp.dhis.android.core.program.ProgramRuleAction
+import org.hisp.dhis.android.core.program.ProgramRuleVariable
+import org.hisp.dhis.android.core.program.ProgramRuleVariableSourceType
+import org.hisp.dhis.android.core.program.ProgramRuleActionType
+import org.hisp.dhis.android.core.program.ProgramRuleVariableCollectionRepository
 import org.hisp.dhis.android.core.trackedentity.TrackedEntityAttributeCollectionRepository
 import org.hisp.dhis.android.core.trackedentity.TrackedEntityAttributeValue
 import org.hisp.dhis.android.core.trackedentity.TrackedEntityDataValue
-import org.hisp.dhis.rules.models.*
+import org.hisp.dhis.rules.models.Rule
+import org.hisp.dhis.rules.models.RuleAction
+import org.hisp.dhis.rules.models.RuleVariable
+import org.hisp.dhis.rules.models.AttributeType
+import org.hisp.dhis.rules.models.RuleActionShowError
+import org.hisp.dhis.rules.models.RuleActionErrorOnCompletion
+import org.hisp.dhis.rules.models.RuleActionAssign
+import org.hisp.dhis.rules.models.RuleActionHideField
+import org.hisp.dhis.rules.models.RuleValueType
+import org.hisp.dhis.rules.models.RuleDataValue
+import org.hisp.dhis.rules.models.RuleVariableCalculatedValue
+import org.hisp.dhis.rules.models.RuleVariableAttribute
+import org.hisp.dhis.rules.models.RuleVariableNewestStageEvent
+import org.hisp.dhis.rules.models.RuleVariablePreviousEvent
+import org.hisp.dhis.rules.models.RuleVariableNewestEvent
+import org.hisp.dhis.rules.models.RuleVariableCurrentEvent
+import org.hisp.dhis.rules.models.RuleAttributeValue
 import timber.log.Timber
 
 fun List<ProgramRule>.toRuleList(): List<Rule> {
