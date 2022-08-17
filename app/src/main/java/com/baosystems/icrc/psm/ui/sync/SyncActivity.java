@@ -1,10 +1,16 @@
 package com.baosystems.icrc.psm.ui.sync;
 
-import static com.baosystems.icrc.psm.commons.Constants.INITIAL_SYNC;
-import static com.baosystems.icrc.psm.commons.Constants.INSTANT_DATA_SYNC;
-import static com.baosystems.icrc.psm.commons.Constants.INSTANT_METADATA_SYNC;
-import static com.baosystems.icrc.psm.commons.Constants.SCREEN_TRANSITION_DELAY;
-import static com.baosystems.icrc.psm.commons.Constants.WORKER_ERROR_MESSAGE_KEY;
+//import static com.baosystems.icrc.psm.commons.Constants.INITIAL_SYNC;
+//import static com.baosystems.icrc.psm.commons.Constants.INSTANT_DATA_SYNC;
+//import static com.baosystems.icrc.psm.commons.Constants.INSTANT_METADATA_SYNC;
+//import static com.baosystems.icrc.psm.commons.Constants.SCREEN_TRANSITION_DELAY;
+//import static com.baosystems.icrc.psm.commons.Constants.WORKER_ERROR_MESSAGE_KEY;
+
+import static org.dhis2.android.rtsm.commons.Constants.INITIAL_SYNC;
+import static org.dhis2.android.rtsm.commons.Constants.INSTANT_DATA_SYNC;
+import static org.dhis2.android.rtsm.commons.Constants.INSTANT_METADATA_SYNC;
+import static org.dhis2.android.rtsm.commons.Constants.SCREEN_TRANSITION_DELAY;
+import static org.dhis2.android.rtsm.commons.Constants.WORKER_ERROR_MESSAGE_KEY;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,13 +29,16 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.work.WorkInfo;
 
 import com.baosystems.icrc.psm.R;
-import com.baosystems.icrc.psm.data.AppConfig;
+//import com.baosystems.icrc.psm.data.AppConfig;
 import com.baosystems.icrc.psm.databinding.ActivitySyncBinding;
 
-import com.baosystems.icrc.psm.ui.base.BaseActivity;
-import com.baosystems.icrc.psm.ui.home.HomeActivity;
-import com.baosystems.icrc.psm.utils.ActivityManager;
-import com.baosystems.icrc.psm.utils.ConfigUtils;
+import org.dhis2.android.rtsm.data.AppConfig;
+import org.dhis2.android.rtsm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.ui.home.HomeActivity;
+import org.dhis2.android.rtsm.utils.ActivityManager;
+import org.dhis2.android.rtsm.utils.ConfigUtils;
+//import com.baosystems.icrc.psm.utils.ActivityManager;
+//import com.baosystems.icrc.psm.utils.ConfigUtils;
 
 import dagger.hilt.android.AndroidEntryPoint;
 import io.reactivex.disposables.CompositeDisposable;

@@ -1,14 +1,14 @@
 package com.baosystems.icrc.psm.di
 
 import android.content.Context
-import com.baosystems.icrc.psm.data.persistence.AppDatabase
-import com.baosystems.icrc.psm.data.persistence.UserActivityDao
-import com.baosystems.icrc.psm.data.persistence.UserActivityRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import org.dhis2.android.rtsm.data.persistence.AppDatabase
+import org.dhis2.android.rtsm.data.persistence.UserActivityDao
+import org.dhis2.android.rtsm.data.persistence.UserActivityRepository
 import javax.inject.Singleton
 
 @Module

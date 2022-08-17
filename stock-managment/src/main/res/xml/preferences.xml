@@ -16,7 +16,7 @@
 
     <Preference
         app:title="@string/language"
-        app:fragment="com.baosystems.icrc.psm.ui.settings.SettingsActivity$LanguagePreferencesFragment"/>
+        app:fragment="org.dhis2.android.rtsm.ui.settings.SettingsActivity$LanguagePreferencesFragment"/>
 
     <Preference
         app:key="@string/force_sync_pref_key"

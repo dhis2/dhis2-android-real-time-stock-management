@@ -37,7 +37,7 @@ import org.dhis2.android.rtsm.utils.DateUtils;
 import org.hisp.dhis.android.core.option.Option;
 import org.hisp.dhis.android.core.organisationunit.OrganisationUnit;
 
-import com.baosystems.icrc.psm.ui.base.GenericListAdapter;
+import org.dhis2.android.rtsm.ui.base.GenericListAdapter;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.datepicker.MaterialDatePicker;
 

@@ -10,7 +10,7 @@ import org.dhis2.android.rtsm.exceptions.InitializationException
 //import com.baosystems.icrc.psm.commons.Constants
 //import com.baosystems.icrc.psm.data.AppConfig
 //import com.baosystems.icrc.psm.data.TransactionType
-//import com.baosystems.icrc.psm.exceptions.InitializationException
+//import org.dhis2.android.rtsm.exceptions.InitializationException
 import java.io.IOException
 import java.util.*
 
