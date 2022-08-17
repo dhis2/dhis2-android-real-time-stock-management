@@ -4,7 +4,12 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import org.dhis2.android.rtsm.services.*
+import org.dhis2.android.rtsm.services.MetadataManager
+import org.dhis2.android.rtsm.services.MetadataManagerImpl
+import org.dhis2.android.rtsm.services.UserManager
+import org.dhis2.android.rtsm.services.UserManagerImpl
+import org.dhis2.android.rtsm.services.StockManager
+import org.dhis2.android.rtsm.services.StockManagerImpl
 
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelperImpl
