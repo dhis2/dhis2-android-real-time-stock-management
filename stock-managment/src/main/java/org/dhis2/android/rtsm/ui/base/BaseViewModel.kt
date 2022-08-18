@@ -14,7 +14,7 @@ import org.dhis2.android.rtsm.data.models.Transaction
 import org.dhis2.android.rtsm.services.preferences.PreferenceProvider
 import org.dhis2.android.rtsm.services.rules.RuleValidationHelper
 import org.dhis2.android.rtsm.services.scheduler.BaseSchedulerProvider
-import java.util.*
+import java.util.Date
 import javax.inject.Inject
 
 @HiltViewModel
