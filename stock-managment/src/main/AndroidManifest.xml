@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-
     <application
         android:supportsRtl="true">
         <activity
@@ -22,12 +21,12 @@
             android:parentActivityName=".ui.managestock.ManageStockActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="org.dhis2.android.rtsm.ui.scanner.ScannerActivity"
-            android:exported="false"
+            android:name=".ui.scanner.ScannerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="fullSensor"
-            android:stateNotNeeded="true"
             android:theme="@style/Theme.BarcodeCapture"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:stateNotNeeded="true"
+            android:exported="false" />
     </application>
 
     <queries>
