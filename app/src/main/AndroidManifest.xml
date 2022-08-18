@@ -31,17 +31,6 @@
         </provider>
 
         <activity
-            android:name="org.dhis2.android.rtsm.ui.scanner.ScannerActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.BarcodeCapture"
-            android:stateNotNeeded="true"
-            android:exported="false" />
-        <activity
-            android:name="org.dhis2.android.rtsm.ui.settings.SettingsActivity"
-            android:theme="@style/Theme.App" />
-        <activity android:name=".ui.sync.SyncActivity" />
-        <activity
             android:name=".ui.login.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -53,15 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.dhis2.android.rtsm.ui.home.HomeActivity" />
-        <activity
-            android:name="org.dhis2.android.rtsm.ui.managestock.ManageStockActivity"
-            android:parentActivityName="org.dhis2.android.rtsm.ui.home.HomeActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity
-            android:name="org.dhis2.android.rtsm.ui.reviewstock.ReviewStockActivity"
-            android:parentActivityName="org.dhis2.android.rtsm.ui.managestock.ManageStockActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
+
         <activity
             android:name="net.openid.appauth.RedirectUriReceiverActivity"
             android:exported="true"
