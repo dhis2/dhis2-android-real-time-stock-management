@@ -27,6 +27,7 @@ import org.dhis2.android.rtsm.commons.Constants.AUDIO_RECORDING_REQUEST_CODE
 import org.dhis2.android.rtsm.commons.Constants.INTENT_EXTRA_MESSAGE
 import org.dhis2.android.rtsm.data.SpeechRecognitionState
 import org.dhis2.android.rtsm.data.TransactionType
+import org.dhis2.android.rtsm.ui.scanner.ScannerActivity
 import org.dhis2.android.rtsm.ui.settings.SettingsActivity
 import org.dhis2.android.rtsm.utils.ActivityManager.Companion.checkPermission
 import org.dhis2.android.rtsm.utils.ActivityManager.Companion.showErrorMessage
@@ -200,7 +201,7 @@ abstract class BaseActivity : AppCompatActivity() {
     open fun scanBarcode(launcher: ActivityResultLauncher<ScanOptions>) {
         val scanOptions = ScanOptions()
             .setBeepEnabled(true)
-            //.setCaptureActivity(ScannerActivity::class.java)
+            .setCaptureActivity(ScannerActivity::class.java)
         launcher.launch(scanOptions)
     }
 

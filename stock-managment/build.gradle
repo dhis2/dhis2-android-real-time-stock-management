@@ -64,7 +64,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-//        jvmTarget = '11'
     }
     buildFeatures {
         viewBinding true
@@ -150,8 +149,3 @@ dependencies {
     // For App Authentication API testing
     androidTestImplementation "androidx.room:room-testing:$versions.room"
 }
-
-//hilt {
-//    enableAggregatingTask = true
-//    enableExperimentalClasspathAggregation = true
-//}
