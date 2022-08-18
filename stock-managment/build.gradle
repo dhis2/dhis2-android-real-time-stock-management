@@ -34,8 +34,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-
-//        javaCompileOptions.annotationProcessorOptions.arguments['dagger.hilt.disableCrossCompilationRootValidation'] = 'true'
     }
 
     buildTypes {
