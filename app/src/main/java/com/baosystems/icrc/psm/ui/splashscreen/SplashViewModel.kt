@@ -23,7 +23,7 @@ import org.hisp.dhis.android.core.D2
 import org.hisp.dhis.android.core.D2Manager
 import timber.log.Timber
 import java.io.IOException
-import java.util.*
+import java.util.Properties
 import javax.inject.Inject
 
 @HiltViewModel
