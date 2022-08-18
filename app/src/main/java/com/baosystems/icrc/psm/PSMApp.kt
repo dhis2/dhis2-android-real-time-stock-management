@@ -3,8 +3,8 @@ package com.baosystems.icrc.psm
 import android.app.Application
 import androidx.hilt.work.HiltWorkerFactory
 import androidx.work.Configuration
-import com.baosystems.icrc.psm.utils.ReleaseTree
 import dagger.hilt.android.HiltAndroidApp
+import org.dhis2.android.rtsm.utils.ReleaseTree
 import timber.log.Timber
 import javax.inject.Inject
 

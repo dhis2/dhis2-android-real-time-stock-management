@@ -15,13 +15,13 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.baosystems.icrc.psm.R;
-import com.baosystems.icrc.psm.data.OperationState;
 import com.baosystems.icrc.psm.databinding.ActivityLoginBinding;
-import com.baosystems.icrc.psm.ui.base.BaseActivity;
 import com.baosystems.icrc.psm.ui.sync.SyncActivity;
-import com.baosystems.icrc.psm.utils.ActivityManager;
-import com.baosystems.icrc.psm.utils.KeyboardUtils;
 
+import org.dhis2.android.rtsm.data.OperationState;
+import org.dhis2.android.rtsm.ui.base.BaseActivity;
+import org.dhis2.android.rtsm.utils.ActivityManager;
+import org.dhis2.android.rtsm.utils.KeyboardUtils;
 import org.hisp.dhis.android.core.user.openid.IntentWithRequestCode;
 
 import dagger.hilt.android.AndroidEntryPoint;

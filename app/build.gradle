@@ -27,7 +27,8 @@ android {
                 arguments += [
                         "room.schemaLocation": "$projectDir/schemas".toString(),
                         "room.incremental": "true",
-                        "room.expandProjection": "true"
+                        "room.expandProjection": "true",
+                        "dagger.hilt.disableCrossCompilationRootValidation": "true"
                 ]
             }
         }
@@ -56,9 +57,17 @@ android {
         viewBinding true
         dataBinding true
     }
+
+    hilt {
+        enableAggregatingTask = true
+        enableExperimentalClasspathAggregation = true
+    }
+
+
 }
 
 dependencies {
+
     // DHIS2 Android SDK
     // remove the no-op version of Flipper added by DHIS2 Android SDK  to avoid duplicates
     implementation ("org.hisp.dhis:android-core:$versions.dhis_core") {
@@ -73,7 +82,6 @@ dependencies {
 
     // Room
     implementation "androidx.room:room-runtime:$versions.room"
-    implementation project(path: ':stock-managment')
     kapt("androidx.room:room-compiler:$versions.room")
     kapt("androidx.room:room-ktx:$versions.room")
     implementation "androidx.room:room-rxjava2:$versions.room"
@@ -133,4 +141,6 @@ dependencies {
 
     // For App Authentication API testing
     androidTestImplementation "androidx.room:room-testing:$versions.room"
+
+    implementation project(":stock-managment")
 }
