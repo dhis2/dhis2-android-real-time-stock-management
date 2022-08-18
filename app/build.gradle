@@ -38,8 +38,6 @@ android {
         manifestPlaceholders = [
                 appAuthRedirectScheme: ''
         ]
-
-//        javaCompileOptions.annotationProcessorOptions.arguments['dagger.hilt.disableCrossCompilationRootValidation'] = 'true'
     }
     buildTypes {
         release {
